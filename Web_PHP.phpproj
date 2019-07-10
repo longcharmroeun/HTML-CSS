@@ -130,7 +130,6 @@
   <ItemGroup>
     <Content Include="composer.json" />
     <Content Include="PHP Homework No.1\Task1\HTMLPage1.html" />
-    <Content Include="PHP_Lession\HTMLPage1.html" />
     <Content Include="WebSite\HTMLPage1.html" />
   </ItemGroup>
 </Project>
