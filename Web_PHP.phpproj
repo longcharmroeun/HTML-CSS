@@ -104,8 +104,8 @@
     <Compile Include="Homework No.2\Task 2.html" />
     <Compile Include="Homework No.2\Task 3.html" />
     <Compile Include="PHP Homework No.1\Task1\Task1.php" />
-    <Compile Include="PHP_Lession\Formhandle.php" />
-    <Compile Include="PHP_Lession\Invoiced.php" />
+    <Compile Include="PHP_Lesson\Formhandle.php" />
+    <Compile Include="PHP_Lesson\Invoiced.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".vs\HTML+CSS\config" />
@@ -122,7 +122,7 @@
     <Folder Include="Homework No.2\icons_hw_module_3" />
     <Folder Include="Homework No.2\Image" />
     <Folder Include="Homework No.2" />
-    <Folder Include="PHP_Lession\" />
+    <Folder Include="PHP_Lesson\" />
     <Folder Include="WebSite\" />
     <Folder Include="PHP Homework No.1\" />
     <Folder Include="PHP Homework No.1\Task1\" />
