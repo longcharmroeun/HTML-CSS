@@ -104,8 +104,8 @@
     <Compile Include="Homework No.2\Task 2.html" />
     <Compile Include="Homework No.2\Task 3.html" />
     <Compile Include="PHP Homework No.1\Task1\Task1.php" />
-    <Compile Include="PHP_Lession\Script1.php" />
-    <Compile Include="PHP_Lession\Script2.php" />
+    <Compile Include="PHP_Lession\Formhandle.php" />
+    <Compile Include="PHP_Lession\Invoiced.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".vs\HTML+CSS\config" />
