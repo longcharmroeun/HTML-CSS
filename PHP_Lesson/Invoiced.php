@@ -163,7 +163,7 @@
     else{
     ?>
     <div class="form">
-        <form action="Script2.php" method="post">
+        <form action="Invoiced.php" method="post">
             Apple:
             <input type="text" name="Apple$" value="1.25" />$
             Quality:
