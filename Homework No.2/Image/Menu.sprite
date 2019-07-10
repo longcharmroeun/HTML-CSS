@@ -1,0 +1,20 @@
+{
+  "images": {
+    "settings": "settings.png",
+    "edit": "edit.png",
+    "favorites": "favorites.png",
+    "history": "history.png",
+    "security": "security.png"
+  },
+  "orientation": "vertical",
+  "optimize": "lossless",
+  "padding": 10,
+  "output": "png",
+  "dpi": 192,
+  "stylesheet": "css",
+  "pathprefix": "",
+  "customstyles": {
+    "display": "inline-block"
+  },
+  "appendcachebustspritesuffix": false
+}

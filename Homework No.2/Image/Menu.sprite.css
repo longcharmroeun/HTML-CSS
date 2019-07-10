@@ -1,0 +1,33 @@
+/*
+This is an example of how to use the image sprite in your own CSS files
+*/
+.menu {
+	background-image: url('Menu.sprite.png');
+	background-repeat: no-repeat;
+	display: block;
+}
+.menu.settings {
+	width: 60px;
+	height: 60px;
+	background-position: -10px -10px;
+}
+.menu.edit {
+	width: 60px;
+	height: 60px;
+	background-position: -10px -80px;
+}
+.menu.favorites {
+	width: 60px;
+	height: 60px;
+	background-position: -10px -150px;
+}
+.menu.history {
+	width: 60px;
+	height: 60px;
+	background-position: -10px -220px;
+}
+.menu.security {
+	width: 60px;
+	height: 60px;
+	background-position: -10px -290px;
+}
