@@ -4,7 +4,7 @@ This is an example of how to use the image sprite in your own CSS files
 .menu {
 	background-image: url('Menu.sprite.png');
 	background-repeat: no-repeat;
-	display: block;
+	display: inline-block;
 }
 .menu.settings {
 	width: 60px;

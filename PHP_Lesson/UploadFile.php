@@ -6,7 +6,7 @@
 <body>
 
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
-        <input type="file" name="csv_file" />
+        <input type="file" name="csv_file"/>
         <input type="submit" name="submit" />
     </form>
 
