@@ -103,6 +103,7 @@
     <Compile Include="Homework No.2\Task 1.html" />
     <Compile Include="Homework No.2\Task 2.html" />
     <Compile Include="Homework No.2\Task 3.html" />
+    <Compile Include="PHP Homework No.1\Task1\BackgroundColor.php" />
     <Compile Include="PHP Homework No.1\Task1\Task1.php" />
     <Compile Include="PHP_Lesson\Formhandle.php" />
     <Compile Include="PHP_Lesson\Invoiced.php" />
@@ -126,16 +127,15 @@
     <Folder Include="Homework No.2\icons_hw_module_3" />
     <Folder Include="Homework No.2\Image" />
     <Folder Include="Homework No.2" />
+    <Folder Include="PHP Homework No.1\Task1\" />
     <Folder Include="PHP_Lesson\" />
     <Folder Include="PHP_Lesson\images\" />
     <Folder Include="PHP_Lesson\OOP\" />
     <Folder Include="WebSite\" />
     <Folder Include="PHP Homework No.1\" />
-    <Folder Include="PHP Homework No.1\Task1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="composer.json" />
-    <Content Include="PHP Homework No.1\Task1\HTMLPage1.html" />
     <Content Include="WebSite\HTMLPage1.html" />
   </ItemGroup>
 </Project>

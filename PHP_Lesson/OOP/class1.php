@@ -13,22 +13,16 @@ namespace OOP
 	class class1
 	{
         protected $name;
-        private $age;
+        protected $age;
         function __construct($name,$age){
             $this->name=$name;
             $this->age=$age;
-        }
-        function GetName(){
-            return $this->name;
-        }
-        private function GetAgg(){
-            return $this->age;
         }
 	}
     class Student extends class1
     {
     	private $id;
-        public function GetName(){
+        private function GetName(){
             return $this->name;
         }
     }

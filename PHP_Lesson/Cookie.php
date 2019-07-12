@@ -1,8 +1,10 @@
 <?php
-setcookie("Name","123123123123123",time+60*60,'/cookie/','hello.com',true,false);
-echo $_COOKIE['Name'];
-echo '<br>';
 
-session_start();
-echo 'id='.session_id().'<br>';
+ob_start();
+echo "Hello\n";
+
+//setcookie("cookiename", "cookiedata");
+echo $_COOKIE['cookiename'];
+ob_end_flush();
+
 ?>
