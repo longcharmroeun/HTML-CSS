@@ -30,14 +30,4 @@ class BackgroundColor
 <body style="background-color:rgb(<?php echo $this->RGB[0]?>,<?php echo $this->RGB[1]?>,<?php echo $this->RGB[2]?>)"></body>
 <?php
     }
-
-    
-
-    /**
-     * GetCookie
-     * @return array $RGB color
-     */
-    public function LoadCookie(){
-        return unserialize($_COOKIE['RGB']);
-    }
 }
