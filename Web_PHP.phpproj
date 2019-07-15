@@ -7,7 +7,7 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
-    <SpecificPageValue>PHP Homework No.1/Task1/Task1.php</SpecificPageValue>
+    <SpecificPageValue>PHP Homework No.2/Task1/Task1.php</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -107,10 +107,13 @@
     <Compile Include="PHP Homework No.1\Task1\Task1.php" />
     <Compile Include="PHP Homework No.1\Task2\_date.php" />
     <Compile Include="PHP Homework No.1\Task2\Task2.php" />
+    <Compile Include="PHP Homework No.2\Task1\File.php" />
+    <Compile Include="PHP Homework No.2\Task1\Task1.php" />
     <Compile Include="PHP_Lesson\Formhandle.php" />
     <Compile Include="PHP_Lesson\Invoiced.php" />
     <Compile Include="PHP_Lesson\Cookie.php" />
     <Compile Include="PHP_Lesson\OOP\class1.php" />
+    <Compile Include="PHP_Lesson\OOP\Interface.php" />
     <Compile Include="PHP_Lesson\OOP\Test.php" />
     <Compile Include="PHP_Lesson\UploadFile.php" />
   </ItemGroup>
@@ -129,8 +132,10 @@
     <Folder Include="Homework No.2\icons_hw_module_3" />
     <Folder Include="Homework No.2\Image" />
     <Folder Include="Homework No.2" />
+    <Folder Include="PHP Homework No.2\" />
     <Folder Include="PHP Homework No.1\Task2\" />
     <Folder Include="PHP Homework No.1\Task1\" />
+    <Folder Include="PHP Homework No.2\Task1\" />
     <Folder Include="PHP_Lesson\" />
     <Folder Include="PHP_Lesson\images\" />
     <Folder Include="PHP_Lesson\OOP\" />
@@ -139,6 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="composer.json" />
+    <Content Include="PHP Homework No.2\Task1\Country.txt" />
     <Content Include="WebSite\HTMLPage1.html" />
   </ItemGroup>
 </Project>
