@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        function GetDate() {
+            var today = new Date();
+            document.getElementById("date").innerHTML = 'Date: ' + today.getMonth() + '/' + today.getDay() + '/' + today.getFullYear();
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .Column {
+            background-color: whitesmoke;
+            border-radius: 5px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            line-height: 50px;
+        }
+
+        .Row {
+            background-color: whitesmoke;
+            justify-content: center;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+            .Row.Head {
+                background-color: royalblue;
+                color: whitesmoke;
+                border-radius: 0px;
+                height: 30px;
+                margin: 0px;
+            }
+
+                .Row.Head.Name {
+                    width: 60%
+                }
+
+                .Row.Head.QTY {
+                    width: 15%;
+                }
+
+                .Row.Head.Unit-Price {
+                    width: 25%;
+                }
+
+                .Row.Head.Amount {
+                    width: 25%;
+                }
+
+                .Row.Head.Body {
+                    background-color: whitesmoke;
+                    color: black;
+                }
+
+            .Row label {
+                margin: 5px 10px 5px 0;
+            }
+
+            .Row input {
+                vertical-align: middle;
+                margin: 5px 10px 5px 0;
+                padding: 10px;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                text-align: center;
+            }
+
+            .Row button {
+                padding: 10px 20px;
+                background-color: dodgerblue;
+                margin-top: 10px;
+                border: 1px solid #ddd;
+                color: white;
+                cursor: pointer;
+            }
+
+                .Row button:hover {
+                    background-color: royalblue;
+                }
+
+            .Row datalist {
+                padding: 10px 20px;
+                background-color: dodgerblue;
+                margin-top: 10px;
+                border: 1px solid #ddd;
+                color: white;
+            }
+    </style>
+</head>
+<body onload="GetDate()">
+    <div class="Column">
+        <form action="/" method="post">
+
+            <div class="Row Title">
+                <input name="title" value="Invoice" />
+            </div>
+
+            <div class="Row">
+                <label id="date"></label>
+                <label>Adress: </label>
+                <input name="adress" value="" />
+                <label>Phone Number: </label>
+                <input name="phone_number" value="" />
+            </div>
+
+            <div class="Row">
+                <label class="Row Head Name">Name</label>
+                <label class="Row Head QTY">QTY</label>
+                <label class="Row Head Unit-Price">Unit Price</label>
+                <label class="Row Head Amount">Amount</label>
+            </div>
+
+            <div class="Row">
+                <input name="name" value="" class="Row Head Name Body" />
+                <input name="name" list="select" value="" class="Row Head QTY Body" />
+                <datalist id="select">
+                    <option>1</option>
+                </datalist>
+                <input name="name" value="" class="Row Head Unit-Price Body" />
+                <input name="name" value="" class="Row Head Amount Body" />
+            </div>
+            <div class="Row"><button type="submit">Submit</button></div>
+        </form>
+    </div>
+</body>
+</html>

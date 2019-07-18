@@ -7,7 +7,7 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
-    <SpecificPageValue>PHP Homework No.2/Task1/Task1.php</SpecificPageValue>
+    <SpecificPageValue>Invoiced/Main.php</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -103,6 +103,10 @@
     <Compile Include="Homework No.2\Task 1.html" />
     <Compile Include="Homework No.2\Task 2.html" />
     <Compile Include="Homework No.2\Task 3.html" />
+    <Compile Include="Invoiced\Main.php" />
+    <Compile Include="Invoiced\Model\Data.php" />
+    <Compile Include="Invoiced\Model\Trait1.php" />
+    <Compile Include="Invoiced\Model\Form.php" />
     <Compile Include="PHP Homework No.1\Task1\BackgroundColor.php" />
     <Compile Include="PHP Homework No.1\Task1\Task1.php" />
     <Compile Include="PHP Homework No.1\Task2\_date.php" />
@@ -132,6 +136,9 @@
     <Folder Include="Homework No.2\icons_hw_module_3" />
     <Folder Include="Homework No.2\Image" />
     <Folder Include="Homework No.2" />
+    <Folder Include="Invoiced\" />
+    <Folder Include="Invoiced\Model\" />
+    <Folder Include="Invoiced\Form\" />
     <Folder Include="PHP Homework No.2\" />
     <Folder Include="PHP Homework No.1\Task2\" />
     <Folder Include="PHP Homework No.1\Task1\" />
@@ -144,6 +151,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="composer.json" />
+    <Content Include="Invoiced\FormStyle.css" />
+    <Content Include="Invoiced\Form\HTMLPage1.html" />
+    <Content Include="Invoiced\JavaScript1.js" />
+    <Content Include="Invoiced\Model\hello.txt" />
     <Content Include="PHP Homework No.2\Task1\Country.txt" />
     <Content Include="WebSite\HTMLPage1.html" />
   </ItemGroup>
