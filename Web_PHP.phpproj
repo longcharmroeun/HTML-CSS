@@ -113,6 +113,8 @@
     <Compile Include="PHP Homework No.1\Task2\Task2.php" />
     <Compile Include="PHP Homework No.2\Task1\File.php" />
     <Compile Include="PHP Homework No.2\Task1\Task1.php" />
+    <Compile Include="PHP Homework No.2\Task2\File.php" />
+    <Compile Include="PHP Homework No.2\Task2\Task2.php" />
     <Compile Include="PHP_Lesson\Formhandle.php" />
     <Compile Include="PHP_Lesson\Invoiced.php" />
     <Compile Include="PHP_Lesson\Cookie.php" />
@@ -142,6 +144,7 @@
     <Folder Include="PHP Homework No.2\" />
     <Folder Include="PHP Homework No.1\Task2\" />
     <Folder Include="PHP Homework No.1\Task1\" />
+    <Folder Include="PHP Homework No.2\Task2\" />
     <Folder Include="PHP Homework No.2\Task1\" />
     <Folder Include="PHP_Lesson\" />
     <Folder Include="PHP_Lesson\images\" />
@@ -156,6 +159,8 @@
     <Content Include="Invoiced\JavaScript1.js" />
     <Content Include="Invoiced\Model\hello.txt" />
     <Content Include="PHP Homework No.2\Task1\Country.txt" />
+    <Content Include="PHP Homework No.2\Task2\Country.txt" />
+    <Content Include="PHP Homework No.2\Task2\CountryList.txt" />
     <Content Include="WebSite\HTMLPage1.html" />
   </ItemGroup>
 </Project>
