@@ -34,9 +34,18 @@ trait Trait1
     }
 
     static function Save($obj){
-        $myfile = fopen('Model/hello.txt', "a") or die("Unable to open file!");
         $txt = json_encode($obj);
-        fwrite($myfile, ','.$txt);
+        if (file_get_contents('Model/hello.txt')=='')
+        {
+            $str=$txt;
+        }
+        else
+        {
+            $str = ','."\n".$txt;
+        }
+
+        $myfile = fopen('Model/hello.txt', "a") or die("Unable to open file!");
+        fwrite($myfile,$str);
         fclose($myfile);
     }
 
@@ -74,7 +83,7 @@ trait Trait1
     static function DisplayTable($table){
         foreach ($table as $value)
         {
-        	?>
+?>
             <div class="Row">
                 <label class="Row Head Name Body">
                     <?php echo $value->date->month.'/'.$value->date->day.'/'.$value->date->year.' '.$value->date->time->hour.':'.$value->date->time->minute.':'.$value->date->time->second;
