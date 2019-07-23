@@ -17,7 +17,7 @@ if (isset($_POST[submit]))
 }
 elseif (isset($_POST['history']))
 {
-    $table=Trait1::LoadData();
+    $table=Trait1::LoadData('Model/hello.txt');
     $startdate=new Date();
     $startdate->day=date('d');
     $startdate->month=date('m');
@@ -28,13 +28,12 @@ elseif (isset($_POST['history']))
     $enddate->month=date('m');
     $enddate->year=date('Y');
     Form::History($startdate,$enddate,$table);
-    //var_dump($tablematches);
 }
 
 elseif (isset($_POST['gettotal']))
 {
     preg_match('/^([0-9]{1,2})\\/([0-9]{1,2})\\/([0-9]{4})/',$_POST['start'],$start);
-    $table=Trait1::LoadData();
+    $table=Trait1::LoadData('Model/hello.txt');
     $startdate=new Date();
     $startdate->day=$start[2];
     $startdate->month=$start[1];
@@ -47,6 +46,18 @@ elseif (isset($_POST['gettotal']))
     $enddate->year=$end[3];
     Form::History($startdate,$enddate,$table);
 }
+elseif (isset($_POST['add_produce']))
+{
+	Form::Add_Produce();
+}
+
+elseif (isset($_POST['produce_submit']))
+{
+    $stock = new Stock($_POST['produce_stock']);
+    $produce=new Product($_POST['produce_name'],$_POST['produce_price'],$stock);
+    Trait1::Save($produce,'Model/Produce.txt');
+}
+
 
 else
 {

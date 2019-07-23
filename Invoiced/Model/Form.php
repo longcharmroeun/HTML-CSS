@@ -50,6 +50,8 @@ trait Form
         <div class="Row">
             <button type="submit" name="submit">Submit</button>
             <button type="submit" name="history" style="margin-left:20px">History</button>
+            <button type="submit" name="add_produce" style="margin-left:20px">Add Produce</button>
+            <button type="submit" name="produce_list" style="margin-left:20px">Produce list</button>
         </div>
     </form>
 </div>
@@ -150,4 +152,32 @@ trait Form
         </div>
         <?php
     }
+
+    static  function Add_Produce()
+    {
+        ?>
+    <div class="Column">
+    <form action="Main.php" method="post">
+        <div class="Row">
+            <label>Produce Name:</label>
+            <input name="produce_name" value="" placeholder="Name:" />
+        </div>
+        <div class="Row">
+<label>Price</label>
+<input name="produce_price" value="" placeholder="Price:" />
+</div>
+<div class="Row">
+    <label>Stock</label>
+    <input name="produce_stock" value="" placeholder="Stock:" />
+</div>
+
+        <div class="Row">
+            <button type="submit" name="produce_submit">Submit</button>
+        </div>
+    </form>
+</div>
+        <?php   
+    }
+    
 }
+

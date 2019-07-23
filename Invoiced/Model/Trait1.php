@@ -33,24 +33,24 @@ trait Trait1
 </div><?php
     }
 
-    static function Save($obj){
-        $txt = json_encode($obj);
-        if (file_get_contents('Model/hello.txt')=='')
+    static function Save($obj,$filename){
+        if (file_get_contents($filename)=="")
         {
-            $str=$txt;
+            $txt = json_encode($obj);
+            echo'asdasd';
         }
         else
         {
-            $str = ','."\n".$txt;
+            $txt = ','."\n".json_encode($obj);
         }
 
-        $myfile = fopen('Model/hello.txt', "a") or die("Unable to open file!");
-        fwrite($myfile,$str);
+        $myfile = fopen($filename, "a") or die("Unable to open file!");
+        fwrite($myfile,$txt);
         fclose($myfile);
     }
 
-    static function LoadData(){
-        $json= trim(file_get_contents('Model/hello.txt'), "\xEF\xBB\xBF");
+    static function LoadData($filename){
+        $json= trim(file_get_contents($filename), "\xEF\xBB\xBF");
         return json_decode('['.$json.']');
     }
 
@@ -61,7 +61,7 @@ trait Trait1
             $item[$i] = new Item($_POST['name'][$i],$_POST['qty'][$i],$_POST['unit-price'][$i]);
         }
         $table = new Table($item,$_POST['adress'],$_POST['phone_number'],$_POST['title']);
-        Trait1::Save($table);
+        Trait1::Save($table,'Model/hello.txt');
         Form::PrinForm($table);
     }
 

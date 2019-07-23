@@ -9,6 +9,12 @@
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
     <SpecificPageValue>Invoiced/Main.php</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>7.1</RuntimeVersion>
+    <EnvName>PHPDev</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -158,6 +164,7 @@
     <Content Include="Invoiced\Form\HTMLPage1.html" />
     <Content Include="Invoiced\JavaScript1.js" />
     <Content Include="Invoiced\Model\hello.txt" />
+    <Content Include="Invoiced\Model\Produce.txt" />
     <Content Include="PHP Homework No.2\Task1\Country.txt" />
     <Content Include="PHP Homework No.2\Task2\Country.txt" />
     <Content Include="PHP Homework No.2\Task2\CountryList.txt" />

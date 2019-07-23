@@ -104,6 +104,87 @@ class Date implements JsonSerializable
     }
 }
 
+class Stock implements JsonSerializable , Countable
+{
+    public $count;
+    function __construct($count){
+        $this->count=$count;
+    }
+    #region JsonSerializable Members
+
+    /**
+     * Specify data which should be serialized to JSON
+     * Serializes the object to a value that can be serialized natively by json_encode() .
+     *
+     * @return mixed
+     */
+    function jsonSerialize()
+    {
+        return (object) get_object_vars($this);
+        // TODO: implement the function JsonSerializable::jsonSerialize
+    }
+
+    #endregion
+
+    #region Countable Members
+
+    /**
+     * Count elements of an object
+     * This method is executed when using the count() function on an object implementing Countable .
+     *
+     * @return int
+     */
+    function count()
+    {
+        return $this->count;
+        // TODO: implement the function Countable::count
+    }
+
+    #endregion
+
+    function Sold($qty){
+        $this->count-=$qty;
+    }
+}
+
+
+class Product implements JsonSerializable
+{
+	public $name;
+    public $price;
+    public $stock;
+    public $ID;
+
+    /**
+     * Summary of __construct
+     * @param mixed $name 
+     * @param mixed $price 
+     * @param mixed $stock class Stock
+     */
+    function __construct($name,$price,$stock){
+        $this->name=$name;
+        $this->price=$price;
+        $this->stock=$stock;
+        $this->ID=time();
+    }  
+    #region JsonSerializable Members
+
+    /**
+     * Specify data which should be serialized to JSON
+     * Serializes the object to a value that can be serialized natively by json_encode() .
+     *
+     * @return mixed
+     */
+    function jsonSerialize()
+    {
+        return (object) get_object_vars($this);
+        // TODO: implement the function JsonSerializable::jsonSerialize
+    }
+
+    #endregion
+}
+
+
 
 class Table implements JsonSerializable{
 
