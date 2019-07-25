@@ -1,2 +1,4 @@
-﻿,
-{"name":"helo","price":"3","stock":{"count":"4"},"ID":1563856898}
+{"name":"apple","price":"12","stock":{"count":"100"},"ID":"0"},
+{"name":"banana","price":"1","stock":{"count":"33"},"ID":"1"},
+{"name":"orange","price":"1","stock":{"count":"65"},"ID":"2"},
+{"name":"been","price":"3","stock":{"count":"19"},"ID":"3"}

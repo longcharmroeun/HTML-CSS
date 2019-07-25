@@ -17,10 +17,21 @@ trait Trait1
         }
     }
 
+    private function AddOptionProduceName($Produce){
+        foreach ($Produce as $value)
+        {
+        	echo '<option>'.$value->name.'</option>';
+        }
+
+    }
+
     static function AddTableDiv(){
 ?>
 <div class="Row" id="bodytable">
-    <input name="name[]" value="" class="Row Head Name Body" id="name0"/>
+    <input name="name[]" list="ProduceName" value="" class="Row Head Name Body" id="name0" />
+    <datalist id="ProduceName">
+        <?php Trait1::AddOptionProduceName(Trait1::LoadData('Model/Produce.txt'))?>
+    </datalist>
     <input name="qty[]" list="qty" value="" class="Row Head QTY Body" id="qty0" oninput="Cal(this)"/>
     <datalist id="qty">
         <?php Trait1::AddOption();?>
@@ -37,7 +48,6 @@ trait Trait1
         if (file_get_contents($filename)=="")
         {
             $txt = json_encode($obj);
-            echo'asdasd';
         }
         else
         {
@@ -52,6 +62,42 @@ trait Trait1
     static function LoadData($filename){
         $json= trim(file_get_contents($filename), "\xEF\xBB\xBF");
         return json_decode('['.$json.']');
+    }
+
+    static function SearchByID($ID){
+        $produce = Trait1::LoadData('Model/Produce.txt');
+        foreach ($produce as $value)
+        {
+        	if($value->ID==$ID){
+                return $value;
+            }
+        }
+        return 0;
+    }
+
+    static function FileReplaceByLine($filename,$line,$text,$append){
+        $current = file_get_contents($filename);
+
+        //Get the lines:
+        $lines = preg_split('/\r\n|\n|\r/', trim($current));
+
+        if ($append)
+        {
+            //We need to append:
+            for ($i = count($lines); $i > $line; $i--)
+            {
+                //Replace all lines so we get an empty spot at the line we want
+                $lines[$i] = $lines[i-1];
+            }
+
+            //Fill in the empty spot:
+            $lines[$line] = $text;
+        }
+        else
+            $lines[$line] = $text;
+
+        //Write back to the file.
+        file_put_contents($filename, implode( "\n", $lines ));
     }
 
     static function Submit(){

@@ -173,11 +173,94 @@ trait Form
 
         <div class="Row">
             <button type="submit" name="produce_submit">Submit</button>
+            <button type="submit" >Back</button>
         </div>
     </form>
 </div>
         <?php   
     }
-    
+
+    static function Produce_list($produce)
+    {
+        ?>
+        <div class="Column">
+        <form action="Main.php" method="post">
+
+        <div class="Row">
+        <label>Search By ID:</label><input name="id" value="" placeholder="ID"/>
+        </div>
+
+        <div class="Row" style="margin-bottom:10px">
+            <button type="submit" name="search_by_id"> Search</button>
+            <button type="submit" style="margin-left:10px">Back</button>
+        </div>
+
+        <div class="Row">
+        <label class="Row Head Name">Produce Name</label>
+        <label class="Row Head QTY">Price</label>
+        <label class="Row Head QTY">Stock</label>
+            <label class="Row Head Unit-Price">ID</label>
+        </div>
+        <div>
+            <?php
+        foreach ($produce as $value)
+        {
+            ?>
+            <div class="Row">
+                <label class="Row Head Name Body"><?php echo $value->name?></label>
+                <label class="Row Head QTY Body"><?php echo $value->price?></label>
+                <label class="Row Head QTY Body"><?php echo $value->stock->count?></label>
+                <label class="Row Head Unit-Price Body"><?php echo $value->ID?></label>
+            </div>
+            <?php
+        }
+            ?>
+        </div>
+        </form>
+        </div>
+        <?php
+    }
+
+    static  function Update_produce($produce)
+    {
+        if ($produce!=0)
+        {
+?>
+<div class="Column">
+    <form action="Main.php" method="post">
+        <div class="Row">
+            <label>Produce Name:</label>
+            <input name="produce_name" value="<?php echo $produce->name?>" placeholder="Name" />
+        </div>
+        <div class="Row">
+            <label>Price:</label>
+            <input name="produce_price" value="<?php echo $produce->price?>" placeholder="Price" />
+        </div>
+        <div class="Row">
+            <label>Stock:</label>
+            <input name="produce_stock" value="<?php echo $produce->stock->count?>" placeholder="Stock" />
+        </div>
+
+        <div class="Row">
+            <label>ID:</label>
+            <input name="produce_id" value="<?php echo $produce->ID?>" placeholder="ID" />
+        </div>
+
+        <div class="Row">
+            <button type="submit" name="produce_update">Update</button>
+            <button type="submit" name="produce_list">Back</button>
+        </div>
+    </form>
+</div>
+<?php
+        }
+        else
+        {
+        	echo 'Produce No Found!';
+            Form::Produce_list(Trait1::LoadData('Model/Produce.txt'));
+        }
+        
+    }
+
 }
 

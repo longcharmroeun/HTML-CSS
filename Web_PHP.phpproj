@@ -127,6 +127,7 @@
     <Compile Include="PHP_Lesson\OOP\class1.php" />
     <Compile Include="PHP_Lesson\OOP\Interface.php" />
     <Compile Include="PHP_Lesson\OOP\Test.php" />
+    <Compile Include="PHP_Lesson\ReadLine.php" />
     <Compile Include="PHP_Lesson\UploadFile.php" />
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +169,7 @@
     <Content Include="PHP Homework No.2\Task1\Country.txt" />
     <Content Include="PHP Homework No.2\Task2\Country.txt" />
     <Content Include="PHP Homework No.2\Task2\CountryList.txt" />
+    <Content Include="PHP_Lesson\file.txt" />
     <Content Include="WebSite\HTMLPage1.html" />
   </ItemGroup>
 </Project>

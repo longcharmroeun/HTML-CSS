@@ -157,16 +157,16 @@ class Product implements JsonSerializable
 
     /**
      * Summary of __construct
-     * @param mixed $name 
-     * @param mixed $price 
+     * @param mixed $name
+     * @param mixed $price
      * @param mixed $stock class Stock
      */
-    function __construct($name,$price,$stock){
+    function __construct($name,$price,$stock,$array_leng){
         $this->name=$name;
         $this->price=$price;
         $this->stock=$stock;
-        $this->ID=time();
-    }  
+        $this->ID=$array_leng++;
+    }
     #region JsonSerializable Members
 
     /**

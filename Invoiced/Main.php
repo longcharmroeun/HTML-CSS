@@ -5,7 +5,8 @@
     <?php include('Model/Trait1.php');
           include('Model/Data.php');
           include('Model/Form.php');
-          ?>
+          $ID=count(Trait1::LoadData('Model/Produce.txt'));
+    ?>
     <script src="JavaScript1.js"></script>
     <link rel="stylesheet" href="Formstyle.css" />
 </head>
@@ -54,10 +55,38 @@ elseif (isset($_POST['add_produce']))
 elseif (isset($_POST['produce_submit']))
 {
     $stock = new Stock($_POST['produce_stock']);
-    $produce=new Product($_POST['produce_name'],$_POST['produce_price'],$stock);
+    $produce=new Product($_POST['produce_name'],$_POST['produce_price'],$stock,$ID);
     Trait1::Save($produce,'Model/Produce.txt');
+    Form::Add_Produce();
 }
 
+elseif (isset($_POST['produce_list']))
+{
+    Form::Produce_list(Trait1::LoadData('Model/Produce.txt'));
+}
+
+elseif (isset($_POST['search_by_id']))
+{
+    Form::Update_produce(Trait1::SearchByID($_POST['id']));
+}
+
+elseif (isset($_POST['produce_update']))
+{
+    if ($_POST['produce_id']==$ID-1)
+    {
+    	Trait1::FileReplaceByLine('Model/Produce.txt',$_POST['produce_id'],json_encode(new Product($_POST['produce_name'],$_POST['produce_price'],new Stock($_POST['produce_stock']),$_POST['produce_id'])),false);
+    }
+    elseif ($_POST['produce_id']>=$ID)
+    {
+        echo 'This ID Not Found!';
+    }
+
+    else
+    {
+    	Trait1::FileReplaceByLine('Model/Produce.txt',$_POST['produce_id'],json_encode(new Product($_POST['produce_name'],$_POST['produce_price'],new Stock($_POST['produce_stock']),$_POST['produce_id'])).',',false);
+    }
+    Form::Produce_list(Trait1::LoadData('Model/Produce.txt'));
+}
 
 else
 {
