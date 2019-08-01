@@ -7,8 +7,14 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
-    <SpecificPageValue>PHP Homework No.1/Task2/Task2.php</SpecificPageValue>
+    <SpecificPageValue>PHP_Lesson/AJax/HTMLPage1.html</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>7.1</RuntimeVersion>
+    <EnvName>PHPDev</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -103,15 +109,31 @@
     <Compile Include="Homework No.2\Task 1.html" />
     <Compile Include="Homework No.2\Task 2.html" />
     <Compile Include="Homework No.2\Task 3.html" />
+    <Compile Include="Invoiced\Main.php" />
+    <Compile Include="Invoiced\Model\Data.php" />
+    <Compile Include="Invoiced\Model\Trait1.php" />
+    <Compile Include="Invoiced\Model\Form.php" />
     <Compile Include="PHP Homework No.1\Task1\BackgroundColor.php" />
     <Compile Include="PHP Homework No.1\Task1\Task1.php" />
     <Compile Include="PHP Homework No.1\Task2\_date.php" />
     <Compile Include="PHP Homework No.1\Task2\Task2.php" />
+    <Compile Include="PHP Homework No.2\Task1\File.php" />
+    <Compile Include="PHP Homework No.2\Task1\Task1.php" />
+    <Compile Include="PHP Homework No.2\Task2\File.php" />
+    <Compile Include="PHP Homework No.2\Task2\Task2.php" />
+    <Compile Include="PHP_Lesson\AJax\Data.php" />
+    <Compile Include="PHP_Lesson\AJax\InsertData.php" />
+    <Compile Include="PHP_Lesson\AJax\LoadData.php" />
     <Compile Include="PHP_Lesson\Formhandle.php" />
     <Compile Include="PHP_Lesson\Invoiced.php" />
     <Compile Include="PHP_Lesson\Cookie.php" />
+    <Compile Include="PHP_Lesson\Mysql\Connection.php" />
+    <Compile Include="PHP_Lesson\Mysql\Item.php" />
     <Compile Include="PHP_Lesson\OOP\class1.php" />
+    <Compile Include="PHP_Lesson\OOP\Interface.php" />
+    <Compile Include="PHP_Lesson\OOP\pagination.php" />
     <Compile Include="PHP_Lesson\OOP\Test.php" />
+    <Compile Include="PHP_Lesson\ReadLine.php" />
     <Compile Include="PHP_Lesson\UploadFile.php" />
   </ItemGroup>
   <ItemGroup>
@@ -129,16 +151,37 @@
     <Folder Include="Homework No.2\icons_hw_module_3" />
     <Folder Include="Homework No.2\Image" />
     <Folder Include="Homework No.2" />
+    <Folder Include="Invoiced\" />
+    <Folder Include="Invoiced\Model\" />
+    <Folder Include="Invoiced\Form\" />
+    <Folder Include="PHP Homework No.2\" />
     <Folder Include="PHP Homework No.1\Task2\" />
     <Folder Include="PHP Homework No.1\Task1\" />
+    <Folder Include="PHP Homework No.2\Task2\" />
+    <Folder Include="PHP Homework No.2\Task1\" />
     <Folder Include="PHP_Lesson\" />
     <Folder Include="PHP_Lesson\images\" />
+    <Folder Include="PHP_Lesson\Mysql\" />
+    <Folder Include="PHP_Lesson\AJax\" />
     <Folder Include="PHP_Lesson\OOP\" />
     <Folder Include="WebSite\" />
     <Folder Include="PHP Homework No.1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="composer.json" />
+    <Content Include="Invoiced\FormStyle.css" />
+    <Content Include="Invoiced\Form\HTMLPage1.html" />
+    <Content Include="Invoiced\JavaScript1.js" />
+    <Content Include="Invoiced\Model\hello.txt" />
+    <Content Include="Invoiced\Model\Produce.txt" />
+    <Content Include="PHP Homework No.2\Task1\Country.txt" />
+    <Content Include="PHP Homework No.2\Task2\Country.txt" />
+    <Content Include="PHP Homework No.2\Task2\CountryList.txt" />
+    <Content Include="PHP_Lesson\AJax\Ajax.js" />
+    <Content Include="PHP_Lesson\AJax\ajax_info.txt" />
+    <Content Include="PHP_Lesson\AJax\FormStyle.css" />
+    <Content Include="PHP_Lesson\AJax\HTMLPage1.html" />
+    <Content Include="PHP_Lesson\file.txt" />
     <Content Include="WebSite\HTMLPage1.html" />
   </ItemGroup>
 </Project>

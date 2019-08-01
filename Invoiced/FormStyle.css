@@ -1,0 +1,106 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.Column {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    line-height: 50px;
+}
+
+.Row {
+    background-color: whitesmoke;
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Row h1{
+    line-height:10px;
+}
+
+    .Row.Head {
+        background-color: royalblue;
+        color: whitesmoke;
+        border-radius: 0px;
+        height: 30px;
+        margin: 0px;
+    }
+
+        .Row.Head.Name {
+            width: 300px;
+        }
+
+        .Row.Head.QTY {
+            width: 100px;
+        }
+
+        .Row.Head.Unit-Price {
+            width: 200px;
+        }
+
+        .Row.Head.Amount {
+            width: 200px;
+        }
+
+        .Row.Head.Body {
+            background-color: whitesmoke;
+            border: 1px solid #ddd;
+            color: black;
+        }
+
+        .Row.Head.Foot {
+            background-color: #c95e8a;
+            color: black;
+            width: 300px;
+            font-weight: bold;
+        }
+
+            .Row.Head.Foot.Total {
+                width: 300px;
+            }
+
+            .Row.Head.Foot.TotalValue {
+                width: 200px;
+            }
+
+    .Row label {
+        margin: 5px 10px 5px 0;
+    }
+
+.Date {
+    color: orangered;
+}
+
+.Row input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.Row button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+}
+
+    .Row button:hover {
+        background-color: royalblue;
+    }

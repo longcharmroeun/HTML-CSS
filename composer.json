@@ -1,5 +1,6 @@
 {
     "require": {
-        "gregwar/captcha": "^1.1"
+        "gregwar/captcha": "^1.1",
+        "dompdf/dompdf": "^0.8.3"
     }
 }
