@@ -7,7 +7,7 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
-    <SpecificPageValue>Invoiced/Main.php</SpecificPageValue>
+    <SpecificPageValue>PHP_Lesson/Mysql/Item.php</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
     <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
     <Runtime>PHP</Runtime>
@@ -124,8 +124,11 @@
     <Compile Include="PHP_Lesson\Formhandle.php" />
     <Compile Include="PHP_Lesson\Invoiced.php" />
     <Compile Include="PHP_Lesson\Cookie.php" />
+    <Compile Include="PHP_Lesson\Mysql\Connection.php" />
+    <Compile Include="PHP_Lesson\Mysql\Item.php" />
     <Compile Include="PHP_Lesson\OOP\class1.php" />
     <Compile Include="PHP_Lesson\OOP\Interface.php" />
+    <Compile Include="PHP_Lesson\OOP\pagination.php" />
     <Compile Include="PHP_Lesson\OOP\Test.php" />
     <Compile Include="PHP_Lesson\ReadLine.php" />
     <Compile Include="PHP_Lesson\UploadFile.php" />
@@ -155,6 +158,8 @@
     <Folder Include="PHP Homework No.2\Task1\" />
     <Folder Include="PHP_Lesson\" />
     <Folder Include="PHP_Lesson\images\" />
+    <Folder Include="PHP_Lesson\Mysql\" />
+    <Folder Include="PHP_Lesson\AJax\" />
     <Folder Include="PHP_Lesson\OOP\" />
     <Folder Include="WebSite\" />
     <Folder Include="PHP Homework No.1\" />
