@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="hello"></title>
+    <script src="Ajax.js"></script>
+    <link rel="stylesheet" href="Formstyle.css" />
+</head>
+<body>
+    <div class="Column">
+        <div class="Row">
+            <div class="Row Head QTY">ID</div>
+            <div class="Row Head Name">Name</div>
+            <div class="Row Head Unit-Price">Price</div>
+            <div class="Row Head QTY">Stock</div>
+        </div>
+        <div id="table"></div>
+        <div class="Row">
+            <button onclick="loadDoc(this)" type="button" >More</button>
+        </div>
+        <div class="Row">
+            <input id="name" value="" placeholder="Name"/>
+            <input id="price" value="" placeholder="Price"/>
+            <input id="stock" value="" placeholder="Stock"/>
+        </div>
+        <div class="Row"><button type="button" onclick="insert()">Insert</button></div>
+    </div>
+</body>
+</html>
