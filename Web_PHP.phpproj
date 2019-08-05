@@ -7,7 +7,7 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
-    <SpecificPageValue>Ajax Homework No.1/Task 1/HTMLPage1.html</SpecificPageValue>
+    <SpecificPageValue>PHP_Lesson/AJax/HTMLPage1.html</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
     <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
     <Runtime>PHP</Runtime>
