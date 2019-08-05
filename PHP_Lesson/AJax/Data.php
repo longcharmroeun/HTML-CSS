@@ -8,7 +8,7 @@
  * @author Long charmroeun
  */
 
-abstract class SqlTable extends PDO{
+class SqlTable extends PDO{
     private $strmysql;
     function Update(){}
 
@@ -18,14 +18,14 @@ abstract class SqlTable extends PDO{
      * @param array $array Value
      * @param mixed $table TableName
      */
-    function Insert(array $array,$table){
+    function Insert(array $array){
         $str = substr($this->strmysql,0,(count($array)*2)-1);
-        $tmp = parent::prepare("INSERT INTO `{$table}` (Name,Price,Stock) VALUES ({$str})");
+        $tmp = parent::prepare("INSERT INTO `produce` (Name,Price,Stock) VALUES ({$str})");
         $tmp->execute($array);
     }
     function Delect(){}
-    function GetData($table){
-        $tmp = parent::prepare("SELECT * FROM `{$table}`");
+    function GetData($page,$limit){
+        $tmp = parent::prepare("SELECT * FROM `produce` LIMIT {$page},{$limit}");
         $tmp->execute();
         return $tmp->fetchAll();
     }
@@ -41,9 +41,9 @@ abstract class SqlTable extends PDO{
      * @param string $passwd
      * @param array $options
      */
-    function __construct($dsn, $username, $passwd,array $option)
+    function __construct($dsn, $username, $passwd)
     {
-        parent::__construct($dsn, $username, $passwd, $option);
+        parent::__construct($dsn, $username, $passwd);
         $this->strmysql="?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?";
     }
 
@@ -241,69 +241,4 @@ abstract class SqlTable extends PDO{
 
     #endregion
 }
-
-class Produces extends SqlTable{
-
-    #region SqlTable Members
-
-    /**
-     *
-     * @return void
-     */
-    function Update()
-    {
-        return parent::Update();
-    }
-
-    /**
-     *
-     * @param array $array
-     * @param  $table
-     *
-     * @return void
-     */
-    function Insert(array $array)
-    {
-        return parent::Insert($array, "Produce");
-    }
-
-    /**
-     *
-     * @return void
-     */
-    function Delect()
-    {
-        return parent::Delect();
-    }
-
-    /**
-     *
-     * @return void
-     */
-    function GetData()
-    {
-        return parent::GetData("Produce");
-    }
-
-    /**
-     * Creates a PDO instance representing a connection to a database
-     * Creates a PDO instance to represent a connection to the requested database.
-     *
-     * @param string $dsn
-     * @param string $username
-     * @param string $passwd
-     *
-     * @return void
-     */
-    function __construct($dsn, $username, $passwd)
-    {
-        parent::__construct($dsn, $username, $passwd,array(
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE=>PDO::FETCH_ASSOC,
-            PDO::ATTR_EMULATE_PREPARES=>false));
-    }
-
-    #endregion
-}
-
 ?>

@@ -1,19 +1,46 @@
 ﻿var id = 0;
-function loadDoc(button) {
+function loadDoc() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            if (this.responseText == "id out of rand") {
-                alert("Out of rand");
+            var json = JSON.parse(this.responseText);
+            for (var i = 0; i < json.length; i++) {
+
+                var div = document.createElement("div");
+                div.className = 'Row';
+
+                var label = document.createElement("label");
+                label.className = "Row Head QTY Body";
+                label.innerHTML = json[i].ID;
+                div.appendChild(label);
+
+                var label = document.createElement("label");
+                label.className = "Row Head Name Body";
+                label.innerHTML = json[i].Name;
+                div.appendChild(label);
+
+                var label = document.createElement("label");
+                label.className = "Row Head Unit-Price Body";
+                label.innerHTML = json[i].Price;
+                div.appendChild(label);
+
+                var label = document.createElement("label");
+                label.className = "Row Head QTY Body";
+                label.innerHTML = json[i].Stock;
+                div.appendChild(label);
+
+                document.getElementById("table").appendChild(div);
             }
-            else {
-                document.getElementById("table").innerHTML += this.responseText; 
+            if (json.length < 5) {
+                document.getElementById("button").style.display = 'none';
             }
         }
     };
-    xhttp.open("GET", "LoadData.php?start_ID="+id, true);
-    xhttp.send();
-    id += 5;
+    xhttp.open("POST", "LoadData.php", true);
+
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send("start_ID="+id);
+    id += 10;
 }
 
 function insert() {
@@ -27,3 +54,5 @@ function insert() {
     xhttp.send();
     id += 5;
 }
+
+

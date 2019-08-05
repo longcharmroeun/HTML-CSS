@@ -3,9 +3,9 @@
 <head>
     <title id="hello"></title>
     <script src="Ajax.js"></script>
-    <link rel="stylesheet" href="Formstyle.css" />
+    <link href="FormStyle.css" rel="stylesheet" />
 </head>
-<body onload="loadDoc(this)">
+<body onload="loadDoc()">
     <div class="Column">
         <div class="Row">
             <div class="Row Head QTY">ID</div>
@@ -15,7 +15,7 @@
         </div>
         <div id="table"></div>
         <div class="Row">
-            <button onclick="loadDoc(this)" type="button" >More</button>
+            <button onclick="loadDoc()" type="button" id="button" >More</button>
         </div>
         <div class="Row">
             <input id="name" value="" placeholder="Name"/>
