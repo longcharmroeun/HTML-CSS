@@ -7,7 +7,7 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
-    <SpecificPageValue>PHP_Lesson/AJax/HTMLPage1.html</SpecificPageValue>
+    <SpecificPageValue>Ajax Homework No.1/Task 1/HTMLPage1.html</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
     <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
     <Runtime>PHP</Runtime>
@@ -29,6 +29,8 @@
     <Compile Include=".vs\slnx.sqlite" />
     <Compile Include=".vs\tasks.vs.json" />
     <Compile Include=".vs\VSWorkspaceState.json" />
+    <Compile Include="Ajax Homework No.1\Task 1\Data.php" />
+    <Compile Include="Ajax Homework No.1\Task 1\Register.php" />
     <Compile Include="Class Pratical\BlockLayer.html" />
     <Compile Include="Class Pratical\BlockLayerClass.css" />
     <Compile Include="Class Pratical\Col Row.html" />
@@ -141,6 +143,7 @@
     <Folder Include=".vs\HTML+CSS\v16" />
     <Folder Include=".vs\HTML+CSS" />
     <Folder Include=".vs" />
+    <Folder Include="Ajax Homework No.1\Task 1\" />
     <Folder Include="Class Pratical" />
     <Folder Include="Exam\Image\Social" />
     <Folder Include="Exam\Image\UnoverSocial" />
@@ -154,6 +157,7 @@
     <Folder Include="Invoiced\" />
     <Folder Include="Invoiced\Model\" />
     <Folder Include="Invoiced\Form\" />
+    <Folder Include="Ajax Homework No.1\" />
     <Folder Include="PHP Homework No.2\" />
     <Folder Include="PHP Homework No.1\Task2\" />
     <Folder Include="PHP Homework No.1\Task1\" />
@@ -168,6 +172,8 @@
     <Folder Include="PHP Homework No.1\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ajax Homework No.1\Task 1\FormStyle.css" />
+    <Content Include="Ajax Homework No.1\Task 1\HTMLPage1.html" />
     <Content Include="composer.json" />
     <Content Include="Invoiced\FormStyle.css" />
     <Content Include="Invoiced\Form\HTMLPage1.html" />
