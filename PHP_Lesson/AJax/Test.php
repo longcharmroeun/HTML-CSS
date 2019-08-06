@@ -52,7 +52,7 @@ function pdf()
             $this->SetLineWidth(0.3);
             $this->SetFont('', 'B');
             // Header
-            $w = array(40, 35, 40, 45);
+            $w = array(20, 55, 30, 30);
             $num_headers = count($header);
             for($i = 0; $i < $num_headers; ++$i) {
                 $this->Cell($w[$i], 7, $header[$i], 1, 0, 'C', 1);
@@ -131,6 +131,19 @@ function pdf()
 
     // print colored table
     $pdf->ColoredTable($header, $data);
+
+    $style = array(
+    'border' => 2,
+    'vpadding' => 'auto',
+    'hpadding' => 'auto',
+    'fgcolor' => array(0,0,0),
+    'bgcolor' => false, //array(255,255,255)
+    'module_width' => 1, // width of a single module in points
+    'module_height' => 1 // height of a single module in points
+);
+    // QRCODE,H : QR-CODE Best error correction
+    $pdf->write2DBarcode('Hello', 'QRCODE,H', 80, 210, 50, 50, $style, 'N');
+    $pdf->Text(80, 205, 'QRCODE H');
 
     // ---------------------------------------------------------
     ob_end_clean();
