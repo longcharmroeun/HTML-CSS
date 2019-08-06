@@ -126,6 +126,8 @@
     <Compile Include="PHP_Lesson\AJax\Data.php" />
     <Compile Include="PHP_Lesson\AJax\InsertData.php" />
     <Compile Include="PHP_Lesson\AJax\LoadData.php" />
+    <Compile Include="PHP_Lesson\AJax\PDF.php" />
+    <Compile Include="PHP_Lesson\AJax\Test.php" />
     <Compile Include="PHP_Lesson\Codeigniter\Script1.php" />
     <Compile Include="PHP_Lesson\Formhandle.php" />
     <Compile Include="PHP_Lesson\Invoiced.php" />

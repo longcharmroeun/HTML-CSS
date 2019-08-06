@@ -7,6 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInit48dd7927451feed9862ee25dccc0e347
 {
     public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
@@ -14,6 +15,17 @@ class ComposerStaticInit48dd7927451feed9862ee25dccc0e347
         's' => 
         array (
             'setasign\\Fpdi\\' => 14,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Contracts\\Translation\\' => 30,
+            'Symfony\\Component\\Translation\\' => 30,
+            'Symfony\\Component\\Finder\\' => 25,
+        ),
+        'R' => 
+        array (
+            'ReCaptcha\\' => 10,
         ),
         'P' => 
         array (
@@ -23,9 +35,17 @@ class ComposerStaticInit48dd7927451feed9862ee25dccc0e347
         array (
             'Mpdf\\' => 5,
         ),
+        'G' => 
+        array (
+            'Gregwar\\' => 8,
+        ),
         'D' => 
         array (
             'DeepCopy\\' => 9,
+        ),
+        'C' => 
+        array (
+            'Carbon\\' => 7,
         ),
     );
 
@@ -33,6 +53,26 @@ class ComposerStaticInit48dd7927451feed9862ee25dccc0e347
         'setasign\\Fpdi\\' => 
         array (
             0 => __DIR__ . '/..' . '/setasign/fpdi/src',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Contracts\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation-contracts',
+        ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Symfony\\Component\\Finder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/finder',
+        ),
+        'ReCaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha',
         ),
         'Psr\\Log\\' => 
         array (
@@ -42,9 +82,17 @@ class ComposerStaticInit48dd7927451feed9862ee25dccc0e347
         array (
             0 => __DIR__ . '/..' . '/mpdf/mpdf/src',
         ),
+        'Gregwar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gregwar/captcha/src/Gregwar',
+        ),
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'Carbon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
     );
 
