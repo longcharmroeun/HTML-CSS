@@ -1,16 +1,17 @@
 <?php
+require_once('../../vendor/autoload.php');
+require_once("Test.php");
 session_start();
 if (isset($_POST["PDF"]))
 {
     if ($_SESSION['phrase']==$_POST['captcha'])
     {
-        echo "asdasssssssssssssss";
+        pdf();
     }
 }
 ?>
 <?php
 use Gregwar\Captcha\CaptchaBuilder;
-require_once('../../vendor/autoload.php');
 $builder = new CaptchaBuilder;
 $builder->build();
 $_SESSION['phrase'] = $builder->getPhrase();

@@ -30,6 +30,12 @@ class SqlTable extends PDO{
         return $tmp->fetchAll();
     }
 
+    function GetData_All(){
+        $tmp = parent::prepare("SELECT * FROM `produce`");
+        $tmp->execute();
+        return $tmp->fetchAll();
+    }
+
     #region PDO Members
 
     /**

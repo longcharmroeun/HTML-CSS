@@ -7,7 +7,7 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
-    <SpecificPageValue>PHP_Lesson/AJax/HTMLPage1.html</SpecificPageValue>
+    <SpecificPageValue>PHP_Lesson/AJax/PDF.php</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
     <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
     <Runtime>PHP</Runtime>
@@ -192,6 +192,7 @@
     <Content Include="PHP_Lesson\AJax\Ajax.js" />
     <Content Include="PHP_Lesson\AJax\FormStyle.css" />
     <Content Include="PHP_Lesson\AJax\HTMLPage1.html" />
+    <Content Include="PHP_Lesson\AJax\table_data_demo.txt" />
     <Content Include="PHP_Lesson\Codeigniter\FormStyle.css" />
     <Content Include="PHP_Lesson\Codeigniter\icons_hw_module_3\edit.png" />
     <Content Include="PHP_Lesson\Codeigniter\icons_hw_module_3\favorites.png" />
