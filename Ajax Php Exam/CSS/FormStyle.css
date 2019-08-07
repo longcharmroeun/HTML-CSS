@@ -14,6 +14,7 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap;
     line-height: 50px;
 }
 
@@ -85,8 +86,8 @@
 
 .Row input {
     vertical-align: middle;
-    margin: 5px 10px 5px 0;
-    padding: 10px;
+    margin-bottom:10px;
+    padding: 10px 20px;
     background-color: #fff;
     border: 1px solid #ddd;
     text-align: center;
@@ -95,7 +96,7 @@
 .Row button {
     padding: 10px 20px;
     background-color: dodgerblue;
-    margin-top: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ddd;
     color: white;
     cursor: pointer;
@@ -104,3 +105,4 @@
     .Row button:hover {
         background-color: royalblue;
     }
+

@@ -1,0 +1,1 @@
+Lvn/moca/android/sdk/EntityRisk;->signatureOfAPK:I
