@@ -27,9 +27,9 @@
     align-items: center;
 }
 
-.Row h1{
-    line-height:10px;
-}
+    .Row h1 {
+        line-height: 10px;
+    }
 
     .Row.Head {
         background-color: royalblue;
@@ -86,7 +86,7 @@
 
 .Row input {
     vertical-align: middle;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     padding: 10px 20px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -106,3 +106,49 @@
         background-color: royalblue;
     }
 
+.container {
+    border:solid #ddd;
+    line-height: 1.5;
+    overflow: hidden;
+    width: 300px;
+}
+
+.link {
+    text-align: center;
+    white-space: nowrap;
+    display: inline-flex;
+    line-height: 2;
+}
+
+.link_animated {
+}
+
+    .link_animated:hover {
+        animation: backAndForth 8s linear infinite;
+    }
+
+@keyframes backAndForth {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    45% {
+        transform: translateX(calc(-100% + 200px));
+    }
+
+    55% {
+        transform: translateX(calc(-100% + 200px));
+    }
+
+    90% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

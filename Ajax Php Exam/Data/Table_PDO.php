@@ -88,8 +88,8 @@ INSERT INTO `upload` (FileID,UserID) VALUES (LAST_INSERT_ID(),?)");
         return $tmp->fetchAll();
     }
 
-    function SearchName($text){
-        $tmp=parent::prepare("SELECT file.ID,file.Pathfile FROM file WHERE file.Pathfile LIKE  '%{$text}%'");
+    function SearchName($text,$page,$limit){
+        $tmp=parent::prepare("SELECT file.ID,file.Pathfile FROM file WHERE file.Pathfile LIKE  '%{$text}%' LIMIT {$page},{$limit}");
         $tmp->execute();
         return $tmp->fetchAll();
     }

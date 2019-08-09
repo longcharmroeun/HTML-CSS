@@ -15,9 +15,14 @@ function loadDoc() {
                 div.appendChild(label);
 
                 var label = document.createElement("label");
-                label.className = "Row Head Name Body";
+                label.className = "link link_animated";
                 label.innerHTML = json[i].Pathfile;
-                div.appendChild(label);
+
+                var tmp = document.createElement("div");
+                tmp.className = "container";
+                tmp.appendChild(label);
+
+                div.appendChild(tmp);
 
                 var label = document.createElement("label");
                 label.className = "Row Head Name Body";

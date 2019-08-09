@@ -7,7 +7,7 @@ if (isset($_POST["upload"]))
 }
 elseif (isset($_POST["view_my_upload"]))
 {
-	header("Location: ViewMyUpload.html");
+	header("Location: ViewMyUpload.php");
     exit();
 }
 

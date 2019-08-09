@@ -38,7 +38,7 @@
     <Compile Include="Ajax Php Exam\Login\SearchFile.php" />
     <Compile Include="Ajax Php Exam\Login\Upload.php" />
     <Compile Include="Ajax Php Exam\Login\UserUpload.php" />
-    <Compile Include="Ajax Php Exam\Login\ViewMyUpload.html" />
+    <Compile Include="Ajax Php Exam\Login\ViewMyUpload.php" />
     <Compile Include="Ajax Php Exam\Sign Up\Sign_up.php" />
     <Compile Include="Class Pratical\BlockLayer.html" />
     <Compile Include="Class Pratical\BlockLayerClass.css" />
