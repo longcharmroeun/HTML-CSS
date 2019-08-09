@@ -1,5 +1,7 @@
 <?php
 session_start();
+include("../Data/Table_PDO.php");
+$categories = new Upload();
 if (isset($_POST["upload"]))
 {
 	header("Location: Upload.php");
@@ -10,8 +12,6 @@ elseif (isset($_POST["view_my_upload"]))
 	header("Location: ViewMyUpload.php");
     exit();
 }
-
-
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -32,6 +32,14 @@ elseif (isset($_POST["view_my_upload"]))
                 <button type="submit" name="upload">Upload</button>
                 <button type="submit" name="view_my_upload">View My Upload</button>
                 <input type="search" id="search" oninput="Search(this)" value="" placeholder="Search"/>
+                <select onchange="CategorySort(this)" id="select">
+                <?php 
+                foreach ($categories->GetAllCategories() as $value)
+                {
+                	?> <option value="<?php echo $value[1]?>"><?php echo $value[0]?></option> <?php
+                }     
+                ?>
+                </select>
             </div>
           
         </form>

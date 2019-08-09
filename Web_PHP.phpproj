@@ -7,7 +7,7 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
-    <SpecificPageValue>Ajax Php Exam/Login/Login.php</SpecificPageValue>
+    <SpecificPageValue>Ajax Php Exam/Login/Upload.php</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
     <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
     <Runtime>PHP</Runtime>
@@ -35,6 +35,7 @@
     <Compile Include="Ajax Php Exam\Login\AllSound.php" />
     <Compile Include="Ajax Php Exam\Login\Login.php" />
     <Compile Include="Ajax Php Exam\Login\Main.php" />
+    <Compile Include="Ajax Php Exam\Login\CategorySort.php" />
     <Compile Include="Ajax Php Exam\Login\SearchFile.php" />
     <Compile Include="Ajax Php Exam\Login\Upload.php" />
     <Compile Include="Ajax Php Exam\Login\UserUpload.php" />

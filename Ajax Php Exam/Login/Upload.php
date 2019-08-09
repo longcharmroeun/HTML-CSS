@@ -1,6 +1,7 @@
 <?php
 include("../Data/Table_PDO.php");
 session_start();
+$categories = new Upload();
 if (isset($_POST["submit"]))
 {
     echo "<p>" . $_POST['file'] . " => file input successfull</p>";
@@ -11,7 +12,7 @@ if (isset($_POST["submit"]))
     if (move_uploaded_file($file_tmp, $target_dir . $file_name)) {
         echo "<h1>File Upload Success</h1>";
         $upload=new Upload();
-        $upload->Insert(array($target_dir . $file_name,$_POST["description"],$_POST["category"],$_SESSION["ID"]));
+        $upload->Insert(array($target_dir . $file_name,$_POST["description"],$_POST["select"],$_SESSION["ID"]));
     } else {
         echo "<h1>File Upload not successfull</h1>";
     }
@@ -37,11 +38,18 @@ if (isset($_POST["submit"]))
             </div>
             <div class="Row">
                 <label>Description:</label>
-                <input type="text" name="description" value="" />
+                <input type="text" name="description" value=""/>
             </div>
             <div class="Row">
                 <label>Category:</label>
-                <input type="text" name="category" value="" />
+                <select name="select">
+                    <?php
+                    foreach ($categories->GetAllCategories() as $value)
+                    {
+                	?> <option value="<?php echo $value[1]?>"><?php echo $value[0]?></option> <?php
+                    }
+                    ?>
+                </select>
             </div>
             <div class="Row">
                 <button type="submit" name="submit">Submit</button>

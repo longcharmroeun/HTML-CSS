@@ -68,7 +68,7 @@ class Upload extends PDO{
      */
     function Insert(array $array){
         $tmp = parent::prepare("
-INSERT INTO `file` (Pathfile, Description,Category)
+INSERT INTO `file` (Pathfile, Description,CategoryID)
      VALUES (?,?,?);
 INSERT INTO `upload` (FileID,UserID) VALUES (LAST_INSERT_ID(),?)");
         $tmp->execute($array);
@@ -77,7 +77,10 @@ INSERT INTO `upload` (FileID,UserID) VALUES (LAST_INSERT_ID(),?)");
 
     function GetUserUploadFile($UserID,$page,$limit)
     {
-    	$tmp=parent::prepare("SELECT file.ID,file.Pathfile,file.Description,file.Category FROM file INNER JOIN upload ON upload.FileID = file.ID WHERE upload.UserID={$UserID} LIMIT {$page},{$limit}");
+    	$tmp=parent::prepare("SELECT file.ID,file.Pathfile,file.Description,categories.Category FROM file
+INNER JOIN upload ON upload.FileID = file.ID
+INNER JOIN categories ON file.CategoryID = categories.ID
+WHERE upload.UserID={$UserID} LIMIT {$page},{$limit}");
         $tmp->execute();
         return $tmp->fetchAll();
     }
@@ -90,6 +93,22 @@ INSERT INTO `upload` (FileID,UserID) VALUES (LAST_INSERT_ID(),?)");
 
     function SearchName($text,$page,$limit){
         $tmp=parent::prepare("SELECT file.ID,file.Pathfile FROM file WHERE file.Pathfile LIKE  '%{$text}%' LIMIT {$page},{$limit}");
+        $tmp->execute();
+        return $tmp->fetchAll();
+    }
+
+    function GetAllCategories()
+    {
+    	$tmp=parent::prepare("SELECT categories.Category, categories.ID FROM categories ");
+        $tmp->execute();
+        return $tmp->fetchAll();
+    }
+
+    function CategorySort($CategoryID,$page,$limit)
+    {
+    	$tmp=parent::prepare("SELECT file.ID,file.Pathfile FROM file 
+INNER JOIN categories ON categories.ID = file.CategoryID
+WHERE categories.ID = {$CategoryID} LIMIT {$page},{$limit}");
         $tmp->execute();
         return $tmp->fetchAll();
     }
