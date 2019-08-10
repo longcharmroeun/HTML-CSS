@@ -4,20 +4,51 @@
     <title></title>
     <link href="CSS/FormStyle.css" rel="stylesheet" />
     <style>
-
+.example5 {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+.example5 label {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: left;
+ /* Apply animation to this element */	
+ -moz-animation: example5 7s linear infinite alternate;
+ -webkit-animation: example5 7s linear infinite alternate;
+ animation: example5 7s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example5 {
+ 0%   { -moz-transform: translateX(70%); }
+ 100% { -moz-transform: translateX(0%); }
+}
+@-webkit-keyframes example5 {
+ 0%   { -webkit-transform: translateX(70%); }
+ 100% { -webkit-transform: translateX(0%); }
+}
+@keyframes example5 {
+ 0%   { 
+ -moz-transform: translateX(70%); /* Firefox bug fix */
+ -webkit-transform: translateX(70%); /* Firefox bug fix */
+ transform: translateX(70%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(0%); /* Firefox bug fix */
+ -webkit-transform: translateX(0%); /* Firefox bug fix */
+ transform: translateX(0%); 
+ }
+}
 </style>
 </head>
 <body>
     <div class="Column">
         <div class="Row">
-            <button>asdasd</button>
-            <div class="dropdown">
-                <button>Dropdown</button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
+            <div class="example5">
+                <label>asdasdasdsadasdasdasdasdasdad</label>
             </div>
         </div>
     </div>

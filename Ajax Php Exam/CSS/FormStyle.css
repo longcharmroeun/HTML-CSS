@@ -130,7 +130,7 @@
 }
 
     .link_animated:hover {
-        animation: backAndForth 8s linear infinite;
+        animation: backAndForth 5s linear infinite;
     }
 
 @keyframes backAndForth {
@@ -143,11 +143,11 @@
     }
 
     45% {
-        transform: translateX(calc(-100% + 200px));
+        transform: translateX(calc(-100% + 295px));
     }
 
     55% {
-        transform: translateX(calc(-100% + 200px));
+        transform: translateX(calc(-100% + 295px));
     }
 
     90% {
