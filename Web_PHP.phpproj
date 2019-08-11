@@ -7,7 +7,7 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
-    <SpecificPageValue>Ajax Php Exam/Login/Login.php</SpecificPageValue>
+    <SpecificPageValue>Ajax Exam/Authentication/Login.php</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
     <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
     <Runtime>PHP</Runtime>
@@ -29,6 +29,18 @@
     <Compile Include=".vs\slnx.sqlite" />
     <Compile Include=".vs\tasks.vs.json" />
     <Compile Include=".vs\VSWorkspaceState.json" />
+    <Compile Include="Ajax Exam\Authentication\Login.php" />
+    <Compile Include="Ajax Exam\Captcha.php" />
+    <Compile Include="Ajax Exam\Config\Database.php" />
+    <Compile Include="Ajax Exam\Exception\InvalidLoginException.php" />
+    <Compile Include="Ajax Exam\Exception\LoaderException.php" />
+    <Compile Include="Ajax Exam\Main\Main.php" />
+    <Compile Include="Ajax Exam\Main\Upload.php" />
+    <Compile Include="Ajax Exam\Request\AllSound.php" />
+    <Compile Include="Ajax Exam\Request\CategorySort.php" />
+    <Compile Include="Ajax Exam\Request\SearchFile.php" />
+    <Compile Include="Ajax Exam\Main\ViewMyUpload.php" />
+    <Compile Include="Ajax Exam\Request\UserUpload.php" />
     <Compile Include="Ajax Homework No.1\Task 1\Data.php" />
     <Compile Include="Ajax Homework No.1\Task 1\Register.php" />
     <Compile Include="Ajax Php Exam\Data\Table_PDO.php" />
@@ -142,6 +154,7 @@
     <Compile Include="PHP_Lesson\Formhandle.php" />
     <Compile Include="PHP_Lesson\Invoiced.php" />
     <Compile Include="PHP_Lesson\Cookie.php" />
+    <Compile Include="PHP_Lesson\Login\Script1.php" />
     <Compile Include="PHP_Lesson\Mysql\Connection.php" />
     <Compile Include="PHP_Lesson\Mysql\Item.php" />
     <Compile Include="PHP_Lesson\OOP\class1.php" />
@@ -156,13 +169,20 @@
     <Folder Include=".vs\HTML+CSS\v16" />
     <Folder Include=".vs\HTML+CSS" />
     <Folder Include=".vs" />
+    <Folder Include="Ajax Exam\Authentication\" />
+    <Folder Include="Ajax Exam\Config\" />
+    <Folder Include="Ajax Exam\CSS\" />
+    <Folder Include="Ajax Exam\Exception\" />
+    <Folder Include="Ajax Exam\JavaScrip\" />
+    <Folder Include="Ajax Exam\Main\" />
+    <Folder Include="Ajax Exam\Request\" />
     <Folder Include="Ajax Homework No.1\Task 1\" />
     <Folder Include="Ajax Php Exam\CSS\" />
     <Folder Include="Ajax Php Exam\Data\" />
     <Folder Include="Ajax Php Exam\Login\" />
     <Folder Include="Ajax Php Exam\JavaScrip\" />
     <Folder Include="Ajax Php Exam\Sign Up\" />
-    <Folder Include="Ajax Php Exam\Sound\" />
+    <Folder Include="Ajax Exam\Sound\" />
     <Folder Include="Class Pratical" />
     <Folder Include="Exam\Image\Social" />
     <Folder Include="Exam\Image\UnoverSocial" />
@@ -178,6 +198,7 @@
     <Folder Include="Invoiced\Form\" />
     <Folder Include="Ajax Homework No.1\" />
     <Folder Include="Ajax Php Exam\" />
+    <Folder Include="Ajax Exam\" />
     <Folder Include="PHP Homework No.2\" />
     <Folder Include="PHP Homework No.1\Task2\" />
     <Folder Include="PHP Homework No.1\Task1\" />
@@ -190,11 +211,15 @@
     <Folder Include="PHP_Lesson\Mysql\" />
     <Folder Include="PHP_Lesson\AJax\" />
     <Folder Include="PHP_Lesson\Codeigniter\" />
+    <Folder Include="PHP_Lesson\Login\" />
     <Folder Include="PHP_Lesson\OOP\" />
     <Folder Include="WebSite\" />
     <Folder Include="PHP Homework No.1\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ajax Exam\CSS\FormStyle.css" />
+    <Content Include="Ajax Exam\JavaScrip\Ajax.js" />
+    <Content Include="Ajax Exam\JavaScrip\MainAjax.js" />
     <Content Include="Ajax Homework No.1\Task 1\FormStyle.css" />
     <Content Include="Ajax Homework No.1\Task 1\HTMLPage1.html" />
     <Content Include="Ajax Php Exam\CSS\FormStyle.css" />
@@ -248,6 +273,7 @@
     <Content Include="PHP_Lesson\Codeigniter\Task 2.html" />
     <Content Include="PHP_Lesson\Codeigniter\Task 3.html" />
     <Content Include="PHP_Lesson\file.txt" />
+    <Content Include="PHP_Lesson\Login\HTMLPage1.html" />
     <Content Include="WebSite\HTMLPage1.html" />
   </ItemGroup>
 </Project>

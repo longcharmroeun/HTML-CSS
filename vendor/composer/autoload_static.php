@@ -39,6 +39,10 @@ class ComposerStaticInit48dd7927451feed9862ee25dccc0e347
         array (
             'Gregwar\\' => 8,
         ),
+        'F' => 
+        array (
+            'Firebase\\JWT\\' => 13,
+        ),
         'D' => 
         array (
             'DeepCopy\\' => 9,
@@ -85,6 +89,10 @@ class ComposerStaticInit48dd7927451feed9862ee25dccc0e347
         'Gregwar\\' => 
         array (
             0 => __DIR__ . '/..' . '/gregwar/captcha/src/Gregwar',
+        ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
         'DeepCopy\\' => 
         array (
