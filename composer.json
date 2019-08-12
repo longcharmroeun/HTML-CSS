@@ -5,6 +5,9 @@
         "nesbot/carbon": "^2.22",
         "google/recaptcha": "^1.2",
         "gregwar/captcha": "^1.1",
-        "firebase/php-jwt": "^5.0"
+        "firebase/php-jwt": "^5.0",
+        "maximebf/debugbar": "^1.15",
+        "knplabs/knp-snappy": "^1.1",
+        "laravel/framework": "^5.8"
     }
 }

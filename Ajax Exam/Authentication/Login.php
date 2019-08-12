@@ -9,17 +9,12 @@ if (isset($_POST["login"]))
     {
         $login = new Database();
         $_SESSION["token"] = $login->Login($_POST["email"],$_POST["password"]);
-        header("Location: ../Main/Main.php");
+        header("Location: ../Main/Main.php?token=".$_SESSION["token"]);
         exit();
     }
     else
     {
     	$Invalid_Captcha=true;
-        //easy test;
-        $login = new Database();
-        $_SESSION["token"] = $login->Login($_POST["email"],$_POST["password"]);
-        header("Location: ../Main/Main.php");
-        exit();
     }
 }
 ?>
@@ -28,6 +23,7 @@ if (isset($_POST["login"]))
 <head>
     <title></title>
     <link href="../CSS/FormStyle.css" rel="stylesheet" />
+    <script src="../JavaScrip/Login.js"></script>
 </head>
 <body>
     <div class="Column">
@@ -41,8 +37,9 @@ if (isset($_POST["login"]))
                 <input type="password" name="password" value="" />
             </div>
             <div class="Row">
-                <img src="http://localhost:45903/Ajax%20Exam/Captcha.php?XDEBUG_SESSION_START=CE9CF129" />
+                <img src="http://localhost:45903/Ajax%20Exam/Captcha.php?XDEBUG_SESSION_START=CE9CF129" style="margin-right:20px;border:solid" id="new_captcha"/>
                 <input type="text" name="captcha" value="" />
+                <button type="button" style="margin-left:20px" onclick="NewCaptcha()">New Captcha</button>
                 <label style="color:#b01f1f">
                     <?php if ($Invalid_Captcha)
                           {
@@ -53,7 +50,7 @@ if (isset($_POST["login"]))
             </div>
             <div class="Row">
                 <button type="submit" name="login">login</button>
-                <a href="http://localhost/HTML+CSS/Ajax%20Php%20Exam/Sign%20Up/Sign_up.php" style="margin-left:20px">Sign Up</a>
+                <a href="http://localhost:45903/Ajax%20Exam/Authentication/Sign_up.php" style="margin-left:20px">Sign Up</a>
             </div>
         </form>
     </div>

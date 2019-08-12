@@ -14,6 +14,12 @@ use \Firebase\JWT\JWT;
 class Database extends PDO{
     private $strmysql;
 
+    function SignUp(array $array){
+        $str = substr($this->strmysql,0,(count($array)*2)-1);
+        $tmp = parent::prepare("INSERT INTO `user` (Email,Password) VALUES ({$str})");
+        $tmp->execute($array);
+    }
+
     function Login($email,$password){
         $tmp = parent::prepare("SELECT * FROM `user` WHERE Email LIKE '{$email}'  AND Password LIKE '{$password}'");
         $tmp->execute();
@@ -25,7 +31,7 @@ class Database extends PDO{
             $audience_claim = "THE_AUDIENCE";
             $issuedat_claim = time(); // issued at
             $notbefore_claim = $issuedat_claim + 10; //not before in seconds
-            $expire_claim = $issuedat_claim + 60*60; // expire time in seconds
+            $expire_claim = $issuedat_claim + 20; // expire time in seconds
             $token = array(
                 "iss" => $issuer_claim,
                 "aud" => $audience_claim,
@@ -43,21 +49,8 @@ class Database extends PDO{
 
     function InvalidateToken($token)
     {
-    	try
-        {
-            JWT::$leeway = 60;
-            return JWT::decode($token, "Hello", array('HS256'));
-
-        }
-        catch (Firebase\JWT\ExpiredException $exception)
-        {
-        	return"0";
-        }
-
-        catch (Exception $exception)
-        {
-            throw new InvalidLoginException();
-        }
+    	JWT::$leeway = 60;
+        return JWT::decode($token, "Hello", array('HS256'));
     }
 
     function GetUserUploadFile($page,$limit,$token)

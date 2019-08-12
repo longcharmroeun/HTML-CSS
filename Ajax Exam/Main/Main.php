@@ -12,8 +12,10 @@ elseif (isset($_POST["view_my_upload"]))
 	header("Location: ViewMyUpload.php");
     exit();
 }
-?>
-<!DOCTYPE html>
+elseif ($categories->InvalidateToken($_REQUEST["token"])!="")
+{
+	?>
+    <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
@@ -34,10 +36,10 @@ elseif (isset($_POST["view_my_upload"]))
                 <input type="search" id="search" oninput="Search(this)" value="" placeholder="Search"/>
                 <select onchange="CategorySort(this)" id="select">
                 <?php 
-                foreach ($categories->GetAllCategories() as $value)
-                {
+    foreach ($categories->GetAllCategories() as $value)
+    {
                 	?> <option value="<?php echo $value[1]?>"><?php echo $value[0]?></option> <?php
-                }     
+    }     
                 ?>
                 </select>
             </div>
@@ -55,3 +57,7 @@ elseif (isset($_POST["view_my_upload"]))
     </div>
 </body>
 </html>
+    <?php
+}
+
+?>

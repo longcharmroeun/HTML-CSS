@@ -30,6 +30,7 @@
     <Compile Include=".vs\tasks.vs.json" />
     <Compile Include=".vs\VSWorkspaceState.json" />
     <Compile Include="Ajax Exam\Authentication\Login.php" />
+    <Compile Include="Ajax Exam\Authentication\Sign_up.php" />
     <Compile Include="Ajax Exam\Captcha.php" />
     <Compile Include="Ajax Exam\Config\Database.php" />
     <Compile Include="Ajax Exam\Exception\InvalidLoginException.php" />
@@ -219,6 +220,7 @@
   <ItemGroup>
     <Content Include="Ajax Exam\CSS\FormStyle.css" />
     <Content Include="Ajax Exam\JavaScrip\Ajax.js" />
+    <Content Include="Ajax Exam\JavaScrip\Login.js" />
     <Content Include="Ajax Exam\JavaScrip\MainAjax.js" />
     <Content Include="Ajax Homework No.1\Task 1\FormStyle.css" />
     <Content Include="Ajax Homework No.1\Task 1\HTMLPage1.html" />
