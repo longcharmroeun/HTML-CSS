@@ -37,7 +37,7 @@ if (isset($_POST["login"]))
                 <input type="password" name="password" value="" />
             </div>
             <div class="Row">
-                <img src="http://localhost:45903/Ajax%20Exam/Captcha.php?XDEBUG_SESSION_START=CE9CF129" style="margin-right:20px;border:solid" id="new_captcha"/>
+                <img src="../Captcha.php" style="margin-right:20px;border:solid" id="new_captcha"/>
                 <input type="text" name="captcha" value="" />
                 <button type="button" style="margin-left:20px" onclick="NewCaptcha()">New Captcha</button>
                 <label style="color:#b01f1f">
@@ -50,7 +50,7 @@ if (isset($_POST["login"]))
             </div>
             <div class="Row">
                 <button type="submit" name="login">login</button>
-                <a href="http://localhost:45903/Ajax%20Exam/Authentication/Sign_up.php" style="margin-left:20px">Sign Up</a>
+                <a href="Sign_up.php" style="margin-left:20px">Sign Up</a>
             </div>
         </form>
     </div>

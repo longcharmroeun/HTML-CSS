@@ -224,7 +224,6 @@
     <Content Include="Ajax Exam\JavaScrip\MainAjax.js" />
     <Content Include="Ajax Homework No.1\Task 1\FormStyle.css" />
     <Content Include="Ajax Homework No.1\Task 1\HTMLPage1.html" />
-    <Content Include="Ajax Php Exam\CSS\FormStyle.css" />
     <Content Include="Ajax Php Exam\HTMLPage1.html" />
     <Content Include="Ajax Php Exam\JavaScrip\Ajax.js" />
     <Content Include="Ajax Php Exam\JavaScrip\MainAjax.js" />

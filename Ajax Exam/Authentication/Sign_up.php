@@ -36,7 +36,7 @@ if (isset($_POST["register"]))
                 <input type="password" name="password" value="" />
             </div>
             <div class="Row">
-                <img src="http://localhost:45903/Ajax%20Exam/Captcha.php?XDEBUG_SESSION_START=CE9CF129" style="margin-right:20px;border:solid" id="new_captcha" />
+                <img src="../Captcha.php" style="margin-right:20px;border:solid" id="new_captcha" />
                 <input type="text" name="captcha" value="" />
                 <label style="color:#b01f1f"><?php if ($Invalid_Captcha)
                              {
