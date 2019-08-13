@@ -8,4 +8,5 @@
     else {
         document.getElementById("sc").value += text.innerText;
     }
+sad
 }
