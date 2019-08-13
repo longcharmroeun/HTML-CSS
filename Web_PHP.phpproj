@@ -7,7 +7,7 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
-    <SpecificPageValue>JavaScrip Lesson/Counter/HTMLPage1.html</SpecificPageValue>
+    <SpecificPageValue>JavaScrip Lesson/Caculator/HTMLPage1.html</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
     <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
     <Runtime>PHP</Runtime>
@@ -203,6 +203,7 @@
     <Folder Include="JavaScrip Lesson\" />
     <Folder Include="JavaScrip Lesson\Counter\" />
     <Folder Include="JavaScrip Lesson\CSS\" />
+    <Folder Include="JavaScrip Lesson\Caculator\" />
     <Folder Include="PHP Homework No.2\" />
     <Folder Include="PHP Homework No.1\Task2\" />
     <Folder Include="PHP Homework No.1\Task1\" />
@@ -230,13 +231,29 @@
     <Content Include="Ajax Php Exam\HTMLPage1.html" />
     <Content Include="Ajax Php Exam\JavaScrip\Ajax.js" />
     <Content Include="Ajax Php Exam\JavaScrip\MainAjax.js" />
+    <None Include="bundleconfig.json" />
+    <None Include="compilerconfig.json" />
+    <Content Include="compilerconfig.json.defaults">
+      <SubType>Content</SubType>
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </Content>
     <Content Include="composer.json" />
     <Content Include="Invoiced\FormStyle.css" />
     <Content Include="Invoiced\Form\HTMLPage1.html" />
     <Content Include="Invoiced\JavaScript1.js" />
     <Content Include="Invoiced\Model\hello.txt" />
     <Content Include="Invoiced\Model\Produce.txt" />
+    <Content Include="JavaScrip Lesson\Caculator\HTMLPage1.html" />
+    <Content Include="JavaScrip Lesson\Caculator\JavaScript1.js" />
     <Content Include="JavaScrip Lesson\Counter\HTMLPage1.html" />
+    <Content Include="JavaScrip Lesson\Counter\JavaScript1.es5.js">
+      <SubType>Content</SubType>
+      <DependentUpon>JavaScrip Lesson\Counter\JavaScript1.js</DependentUpon>
+    </Content>
+    <Content Include="JavaScrip Lesson\Counter\JavaScript1.es5.min.js">
+      <SubType>Content</SubType>
+      <DependentUpon>JavaScrip Lesson\Counter\JavaScript1.es5.js</DependentUpon>
+    </Content>
     <Content Include="JavaScrip Lesson\Counter\JavaScript1.js" />
     <Content Include="JavaScrip Lesson\CSS\FormStyle.css" />
     <Content Include="PHP Homework No.2\Task1\Country.txt" />
