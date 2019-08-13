@@ -6,6 +6,6 @@
         document.getElementById("sc").value += "=" + eval(document.getElementById("sc").value);
     }
     else {
-        document.getElementById("sc").value += text.innerText;
+        document.getElementById("sc").value += text.innerText;asd
     }
 }
