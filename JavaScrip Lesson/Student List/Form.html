@@ -18,28 +18,26 @@
 
         .Column {
             border-radius: 5px;
-            justify-content: center;
             display: flex;
             flex-direction: column;
-            align-items: center;
             padding: 10px;
             flex-wrap: wrap;
             line-height: 50px;
-            width: 900px;
-            height: 600px;
             border: solid #808080;
             background-color: white;
         }
 
         .Row {
             background-color: white;
-            justify-content: center;
             border-radius: 10px;
             display: flex;
             flex-direction: row;
-            align-items: center;
             border-radius: 5px;
         }
+
+            .Row .input label {
+                width: 70px;
+            }
 
             .Row.Head.QTY {
                 width: 200px;
@@ -70,57 +68,60 @@
 <body>
     <div class="Caculator">
         <div class="Row">
-            <div class="Column" style="width: 340px;">
-                <div class="Row">
-                    <label>
-                        First<br />
-                    </label>
+            <div class="Column" style="padding: 20px">
+                <div class="Row input">
+                    <label>First:</label>
                     <input type="text" value="" id="first" placeholder="Name" />
                 </div>
-                <div class="Row">
+                <div class="Row input">
                     <label>Last:</label>
                     <input type="text" value="" id="last" placeholder="Name" />
                 </div>
-                <div class="Row">
+                <div class="Row input">
                     <label>Date:</label>
                     <input type="text" value="" id="date" placeholder="Date of bith" />
                 </div>
-                <div class="Row">
+                <div class="Row input">
                     <label>Sex:</label>
                     <input type="text" value="" id="sex" placeholder="Student Sex" />
                 </div>
-                <div class="Row">
+                <div class="Row input">
                     <label>Address1:</label>
                     <input type="text" value="" id="address1" placeholder="Address 1" />
                 </div>
-                <div class="Row">
+                <div class="Row input">
                     <label>Address2:</label>
                     <input type="text" value="" id="address2" placeholder="Address 2" />
                 </div>
-                <div class="Row">
+                <div class="Row input">
                     <label>Address3:</label>
                     <input type="text" value="" id="address3" placeholder="Address 3" />
                 </div>
-                <div class="Row">
+                <div class="Row input">
                     <label>Address4:</label>
                     <input type="text" value="" id="address4" placeholder="Address 4" />
                 </div>
+                <div class="Row input">
+                    <label>Address5:</label>
+                    <input type="text" value="" id="address5" placeholder="Address 5" />
+                </div>
                 <div class="Row">
-                    <button type="button" onclick="StudentInsert()">Register</button>
+                    <button type="button" onclick="StudentInsert()" style="margin-top: 20px">Register</button>
                 </div>
             </div>
-            <div class="Column">
+            <div class="Caculator">
                 <div class="Row">
-                    <label style="font-size: 40px; font-weight: bold; border: solid #808080; padding: 10px; border-radius: 5px">Student List</label>
+                    <label style="font-size: 40px; font-weight: bold; border: 2px solid #808080; padding: 10px 20px; border-radius: 5px">Student List</label>
                 </div>
                 <div class="Row">
                     <label class="Row Head ID">ID</label>
-                    <label class="Row Head QTY">Name</label>
+                    <label class="Row Head QTY">Student Name</label>
                     <label class="Row Head QTY">Address</label>
                     <label class="Row Head QTY">Sex</label>
                     <label class="Row Head QTY">Date Of Birth</label>
                 </div>
                 <div id="table"></div>
+                <div class="Row" id="menu"></div>
             </div>
         </div>
     </div>
