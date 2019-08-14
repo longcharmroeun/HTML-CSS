@@ -7,7 +7,7 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
-    <SpecificPageValue>JavaScrip Lesson/Student List/Form.html</SpecificPageValue>
+    <SpecificPageValue>JavaScrip Lesson/Caculator/HTMLPage1.html</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
     <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
     <Runtime>PHP</Runtime>
@@ -128,7 +128,6 @@
     <Compile Include="Invoiced\Model\Data.php" />
     <Compile Include="Invoiced\Model\Trait1.php" />
     <Compile Include="Invoiced\Model\Form.php" />
-    <Compile Include="Laravel\Script1.php" />
     <Compile Include="PHP Homework No.1\Task1\BackgroundColor.php" />
     <Compile Include="PHP Homework No.1\Task1\Task1.php" />
     <Compile Include="PHP Homework No.1\Task2\_date.php" />
@@ -190,7 +189,6 @@
     <Folder Include="JavaScrip Lesson\CSS\" />
     <Folder Include="JavaScrip Lesson\Caculator\" />
     <Folder Include="JavaScrip Lesson\Student List\" />
-    <Folder Include="Laravel\" />
     <Folder Include="PHP Homework No.2\" />
     <Folder Include="PHP Homework No.1\Task2\" />
     <Folder Include="PHP Homework No.1\Task1\" />
@@ -222,6 +220,7 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </Content>
     <Content Include="composer.json" />
+    <Content Include="favicon.ico" />
     <Content Include="Invoiced\FormStyle.css" />
     <Content Include="Invoiced\Form\HTMLPage1.html" />
     <Content Include="Invoiced\JavaScript1.js" />
