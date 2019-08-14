@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link href="../CSS/FormStyle.css" rel="stylesheet" />
+    <script src="Student.js"></script>
+    <style>
+        .Caculator {
+            border-radius: 5px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            flex-wrap: wrap;
+            line-height: 50px;
+        }
+
+        .Column {
+            border-radius: 5px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            flex-wrap: wrap;
+            line-height: 50px;
+            width: 900px;
+            height: 600px;
+            border: solid #808080;
+            background-color: white;
+        }
+
+        .Row {
+            background-color:white;
+            justify-content: center;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+            .Row.Head.QTY {
+                width: 200px;
+            }
+
+            .Row.Head.ID {
+                width: 70px;
+            }
+
+            .Row button {
+                padding: 10px 20px;
+                background-color: dodgerblue;
+                border: 2px solid #ddd;
+                color: white;
+                cursor: pointer;
+                width: 100px;
+            }
+
+            .Row input {
+                vertical-align: middle;
+                padding: 10px 20px;
+                background-color: #fff;
+                border: 6px solid #ddd;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <div class="Caculator">
+        <div class="Row">
+            <div class="Column" style="width: 340px;">
+                <div class="Row">
+                    <label>First<br /></label>
+                    <input type="text" value="" id="first" placeholder="Name" />
+                </div>
+                <div class="Row">
+                    <label>Last:</label>
+                    <input type="text" value="" id="last" placeholder="Name" />
+                </div>
+                <div class="Row">
+                    <label>Date:</label>
+                    <input type="text" value="" id="date" placeholder="Date of bith" />
+                </div>
+                <div class="Row">
+                    <label>Sex:</label>
+                    <input type="text" value="" id="sex" placeholder="Student Sex" />
+                </div>
+                <div class="Row">
+                    <label>Address1:</label>
+                    <input type="text" value="" id="address1" placeholder="Address 1" />
+                </div>
+                <div class="Row">
+                    <label>Address2:</label>
+                    <input type="text" value="" id="address2" placeholder="Address 2" />
+                </div>
+                <div class="Row">
+                    <label>Address3:</label>
+                    <input type="text" value="" id="address3" placeholder="Address 3" />
+                </div>
+                <div class="Row">
+                    <label>Address4:</label>
+                    <input type="text" value="" id="address4" placeholder="Address 4" />
+                </div>
+                <div class="Row">
+                    <button type="button" onclick="StudentInsert()">Register</button>
+                </div>
+            </div>
+            <div class="Column">
+                <div class="Row">
+                    <label style="font-size:40px;font-weight:bold;border:solid #808080;padding:10px;border-radius:5px">Student List</label>
+                </div>
+                <div class="Row">
+                    <label class="Row Head ID">ID</label>
+                    <label class="Row Head QTY">Name</label>
+                    <label class="Row Head QTY">Address</label>
+                    <label class="Row Head QTY">Sex</label>
+                    <label class="Row Head QTY">Date Of Birth</label>
+                </div>
+                <div id="table"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
