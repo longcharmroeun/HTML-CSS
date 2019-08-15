@@ -61,33 +61,41 @@ function StudentInsert() {
     }
 
     var row = document.createElement("div");
-    row.className = "Row";
+    row.className = "Row hover";
+    row.setAttribute("onmouseover", "RowOver(this)")
+    row.setAttribute("onmouseout", "RowOut(this)")
+    row.setAttribute("onclick", "RowClick(this)")
 
     Counter++;
 
     var div = document.createElement("div");
-    div.className = "Row Row Head ID Body";
+    div.className = "Row Head ID Body";
     div.innerHTML = ++ID;
+    div.style.cursor = "pointer";
     row.appendChild(div);
 
     var div = document.createElement("div");
-    div.className = "Row Row Head QTY Body";
+    div.className = "Row Head QTY Body";
     div.innerHTML = document.getElementById("first").value + document.getElementById("last").value;
+    div.style.cursor = "pointer";
     row.appendChild(div);
 
     var div = document.createElement("div");
-    div.className = "Row Row Head QTY Body";
+    div.className = "Row Head QTY Body";
     div.innerHTML = document.getElementById("address1").value;
+    div.style.cursor = "pointer";
     row.appendChild(div);
 
     var div = document.createElement("div");
-    div.className = "Row Row Head QTY Body";
+    div.className = "Row Head QTY Body";
     div.innerHTML = document.getElementById("sex").value;
+    div.style.cursor = "pointer";
     row.appendChild(div);
 
     var div = document.createElement("div");
-    div.className = "Row Row Head QTY Body";
+    div.className = "Row Head QTY Body";
     div.innerHTML = document.getElementById("date").value;
+    div.style.cursor = "pointer";
     row.appendChild(div);
 
     document.getElementById("table").appendChild(row);
@@ -111,4 +119,20 @@ function myfunction(bt) {
     else {
         document.getElementById("table").innerHTML = arr[bt.value];
     }
+}
+
+function RowOver(row) {
+    for (var i = 0; i < row.childElementCount; i++) {
+        row.children[i].style.backgroundColor = "#808080";
+    }
+}
+
+function RowOut(row) {
+    for (var i = 0; i < row.childElementCount; i++) {
+        row.children[i].style.backgroundColor = "whitesmoke";
+    }
+}
+
+function RowClick(row) {
+    alert(row.children[0].innerHTML);
 }

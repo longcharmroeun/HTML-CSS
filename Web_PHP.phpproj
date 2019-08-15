@@ -238,6 +238,10 @@
       <DependentUpon>JavaScrip Lesson\Counter\JavaScript1.es5.js</DependentUpon>
     </Content>
     <Content Include="JavaScrip Lesson\Counter\JavaScript1.js" />
+    <Content Include="JavaScrip Lesson\Counter\JavaScript1.min.js">
+      <SubType>Content</SubType>
+      <DependentUpon>JavaScrip Lesson\Counter\JavaScript1.js</DependentUpon>
+    </Content>
     <Content Include="JavaScrip Lesson\CSS\FormStyle.css" />
     <Content Include="JavaScrip Lesson\Student List\Form.html" />
     <Content Include="JavaScrip Lesson\Student List\Student.js" />
