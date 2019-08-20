@@ -152,7 +152,7 @@ function RowClick(row) {
             form.children[3].children[1].value = Input[i].Teacher;
             form.children[4].children[1].value = Input[i].Room;
             form.children[5].children[1].value = Input[i].Lesson;
-            form.children[6].children[1].value = Input[i].Data;
+            form.children[6].children[1].value = Input[i].Date;
             form.children[7].children[1].value = Input[i].Start;
             form.children[8].children[1].value = Input[i].End;
         }
@@ -228,6 +228,7 @@ function ClearButton() {
 }
 
 function LoadInput(form) {
+    var date = new Date(form.children[6].children[1].value);
     Input.push({
         Name: form.children[0].children[1].value,
         ID: form.children[1].children[1].value,
@@ -235,7 +236,8 @@ function LoadInput(form) {
         Teacher: form.children[3].children[1].value,
         Room: form.children[4].children[1].value,
         Lesson: form.children[5].children[1].value,
-        Date: form.children[6].children[1].value,
+        Date: date.getFullYear().toString() + '-' + (date.getMonth() + 1).toString().padStart(2, 0) +
+            '-' + date.getDate().toString().padStart(2, 0),
         Start: form.children[7].children[1].value,
         End: form.children[8].children[1].value
     });
