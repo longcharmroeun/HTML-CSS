@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link href="../CSS/FormStyle.css" rel="stylesheet" />
+    <script src="Attendence.js"></script>
+    <style>
+        .Caculator {
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            flex-wrap: wrap;
+            line-height: 50px;
+        }
+
+        .Column {
+            border-radius: 5px;
+            flex-direction: column;
+            padding: 10px;
+            line-height: 50px;
+            border: solid #808080;
+            background-color: white;
+        }
+
+        .Row {
+            justify-content: center;
+            background-color: white;
+            border-radius: 10px;
+            flex-direction: row;
+            border-radius: 5px;
+        }
+
+            .Row .input label {
+                width: 70px;
+            }
+
+            .Row.Head.QTY {
+                width: 200px;
+            }
+
+            .Row.Head.ID {
+                width: 70px;
+            }
+
+            .Row button {
+                padding: 10px 20px;
+                background-color: #3e64ff;
+                border: 2px solid #ddd;
+                color: white;
+                cursor: pointer;
+                width: 100px;
+                height: 40px;
+            }
+
+            .Row input {
+                vertical-align: middle;
+                padding: 10px 20px;
+                background-color: #fff;
+                border: 6px solid #ddd;
+                text-align: center;
+            }
+
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 10px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%;
+        }
+    </style>
+</head>
+<body onload="Onload()">
+    <div class="Caculator">
+        <div class="Row">
+            <div class="Column" style="padding: 20px">
+                <form action="/" method="post">
+                    <div class="Row input" style="align-items: center">
+                        <label>Name</label>
+                        <input type="text" value="" placeholder="Student Name" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>ID</label>
+                        <input type="text" value="" placeholder="Student ID" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>Subject</label>
+                        <input type="text" value="" placeholder="Student Subject" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>Teacher</label>
+                        <input type="text" value="" placeholder="Teacher" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>Room</label>
+                        <select style="width: 211px; border: 6px solid #ddd">
+                            <option value="0">Php</option>
+                            <option value="1">JavaScrip</option>
+                            <option value="2">HTML</option>
+                            <option value="3">Ajax</option>
+                        </select>
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>Lesson</label>
+                        <input type="text" value="" placeholder="Lesson" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>Date</label>
+                        <input type="date" value="" style="width: 211px; font-family: Segoe UI" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>Start</label>
+                        <input type="time" value="" style="width: 211px; font-family: Segoe UI" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>End</label>
+                        <input type="time" value="" style="width: 211px; font-family: Segoe UI" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <button type="button" onclick="Insert()">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <form action="/" method="post">
+                    <div class="Row input" style="align-items: center">
+                        <label>Name</label>
+                        <input type="text" value="" placeholder="Student Name" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>ID</label>
+                        <input type="text" value="" placeholder="Student ID" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>Subject</label>
+                        <input type="text" value="" placeholder="Student Subject" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>Teacher</label>
+                        <input type="text" value="" placeholder="Teacher" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>Room</label>
+                        <select style="width: 211px; border: 6px solid #ddd">
+                            <option value="0">Php</option>
+                            <option value="1">JavaScrip</option>
+                            <option value="2">HTML</option>
+                            <option value="3">Ajax</option>
+                        </select>
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>Lesson</label>
+                        <input type="text" value="" placeholder="Lesson" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>Date</label>
+                        <input type="date" value="" style="width: 211px; font-family: Segoe UI" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>Start</label>
+                        <input type="time" value="" style="width: 211px; font-family: Segoe UI" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <label>End</label>
+                        <input type="time" value="" style="width: 211px; font-family: Segoe UI" />
+                    </div>
+                    <div class="Row input" style="align-items: center">
+                        <button type="button" onclick="Insert()">Update</button>
+                    </div>
+                </form>
+                </div>
+
+            </div>
+            <div class="Caculator">
+                <div class="Row">
+                    <label style="font-size: 40px; font-weight: bold; border: 2px solid #808080; padding: 10px 20px; border-radius: 5px">Attendence List</label>
+                </div>
+                <div class="Row">
+                    <label class="Row Head ID">ID</label>
+                    <label class="Row Head QTY">Student Name</label>
+                    <label class="Row Head QTY">Teacher</label>
+                    <label class="Row Head QTY">Subject</label>
+                    <label class="Row Head QTY">Lesson</label>
+                </div>
+                <div id="table"></div>
+                <div class="Row" id="menu"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

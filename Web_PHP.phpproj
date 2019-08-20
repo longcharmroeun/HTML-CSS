@@ -7,7 +7,7 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
-    <SpecificPageValue>HomeWork/JavaScrip/HomeWork No.1/homework.html</SpecificPageValue>
+    <SpecificPageValue>JavaScrip Lesson/Attendence/AttendenceForm.html</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
     <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
     <Runtime>PHP</Runtime>
@@ -193,6 +193,7 @@
     <Folder Include="JavaScrip Lesson\Counter\" />
     <Folder Include="JavaScrip Lesson\CSS\" />
     <Folder Include="JavaScrip Lesson\Caculator\" />
+    <Folder Include="JavaScrip Lesson\Attendence\" />
     <Folder Include="JavaScrip Lesson\Student List\" />
     <Folder Include="HomeWork\" />
     <Folder Include="HomeWork\PHP\PHP Homework No.2\" />
@@ -235,6 +236,8 @@
     <Content Include="Invoiced\JavaScript1.js" />
     <Content Include="Invoiced\Model\hello.txt" />
     <Content Include="Invoiced\Model\Produce.txt" />
+    <Content Include="JavaScrip Lesson\Attendence\Attendence.js" />
+    <Content Include="JavaScrip Lesson\Attendence\AttendenceForm.html" />
     <Content Include="JavaScrip Lesson\Caculator\HTMLPage1.html" />
     <Content Include="JavaScrip Lesson\Caculator\JavaScript1.js" />
     <Content Include="JavaScrip Lesson\Counter\HTMLPage1.html" />
