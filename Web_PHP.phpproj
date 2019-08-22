@@ -194,6 +194,7 @@
     <Folder Include="JavaScrip Lesson\CSS\" />
     <Folder Include="JavaScrip Lesson\Caculator\" />
     <Folder Include="JavaScrip Lesson\Attendence\" />
+    <Folder Include="JavaScrip Lesson\canvans\" />
     <Folder Include="JavaScrip Lesson\Student List\" />
     <Folder Include="HomeWork\" />
     <Folder Include="HomeWork\PHP\PHP Homework No.2\" />
@@ -240,6 +241,8 @@
     <Content Include="JavaScrip Lesson\Attendence\AttendenceForm.html" />
     <Content Include="JavaScrip Lesson\Caculator\HTMLPage1.html" />
     <Content Include="JavaScrip Lesson\Caculator\JavaScript1.js" />
+    <Content Include="JavaScrip Lesson\canvans\HTMLPage1.html" />
+    <Content Include="JavaScrip Lesson\canvans\JavaScript1.js" />
     <Content Include="JavaScrip Lesson\Counter\HTMLPage1.html" />
     <Content Include="JavaScrip Lesson\Counter\JavaScript1.es5.js">
       <SubType>Content</SubType>

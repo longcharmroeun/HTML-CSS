@@ -8,7 +8,7 @@ var num = 1;
 function Onload() {
     var date = new Date();
     var form = document.forms[0];
-    var time = date.getHours().toString().padStart(2, 0) + ":" + date.getMinutes().toString().padStart(2, 0) + ":" + date.getSeconds().toString().padStart(2, 0);;
+    var time = date.getHours().toString().padStart(2, 0) + ":" + date.getMinutes().toString().padStart(2, 0) + ":" + "00";
     form.children[6].children[1].value = date.getFullYear().toString() + '-' + (date.getMonth() + 1).toString().padStart(2, 0) +
         '-' + date.getDate().toString().padStart(2, 0);
     form.children[7].children[1].value = time;

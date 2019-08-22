@@ -5,6 +5,10 @@
     <link href="../CSS/FormStyle.css" rel="stylesheet" />
     <script src="Attendence.js"></script>
     <style>
+        .Row input:invalid {
+            color: red;
+        }
+
         .Caculator {
             border-radius: 5px;
             display: flex;
@@ -88,14 +92,14 @@
     <div class="Caculator">
         <div class="Row">
             <div class="Column" style="padding: 20px">
-                <form action="/" method="post">
+                <form action="/" method="post" autocomplete="on">
                     <div class="Row input" style="align-items: center">
                         <label>Name</label>
-                        <input type="text" value="" placeholder="Student Name" />
+                        <input type="text" value="" placeholder="Student Name" required="" />
                     </div>
                     <div class="Row input" style="align-items: center">
                         <label>ID</label>
-                        <input type="text" value="" placeholder="Student ID" />
+                        <input type="number" value="" min="1" required="" />
                     </div>
                     <div class="Row input" style="align-items: center">
                         <label>Subject</label>
@@ -120,18 +124,18 @@
                     </div>
                     <div class="Row input" style="align-items: center">
                         <label>Date</label>
-                        <input type="date" value="" style="width: 211px; font-family: Segoe UI" />
+                        <input type="date" value="" style="width: 211px; font-family: Segoe UI" autocomplete="off" />
                     </div>
                     <div class="Row input" style="align-items: center">
                         <label>Start</label>
-                        <input type="time" value="" style="width: 211px; font-family: Segoe UI" />
+                        <input type="time" value="" style="width: 211px; font-family: Segoe UI" autocomplete="off" />
                     </div>
                     <div class="Row input" style="align-items: center">
                         <label>End</label>
-                        <input type="time" value="" style="width: 211px; font-family: Segoe UI" />
+                        <input type="time" value="" style="width: 211px; font-family: Segoe UI" autocomplete="off" />
                     </div>
                     <div class="Row input" style="align-items: center">
-                        <button type="button" onclick="Insert()">Submit</button>
+                        <button type="submit" onclick="Insert()">Submit</button>
                     </div>
                 </form>
             </div>
@@ -139,51 +143,51 @@
             <div class="modal" id="modal">
                 <div class="modal-content">
                     <form action="/" method="post">
-                    <div class="Row input" style="align-items: center">
-                        <label>Name</label>
-                        <input type="text" value="" placeholder="Student Name" />
-                    </div>
-                    <div class="Row input" style="align-items: center">
-                        <label>ID</label>
-                        <input type="text" value="" placeholder="Student ID" />
-                    </div>
-                    <div class="Row input" style="align-items: center">
-                        <label>Subject</label>
-                        <input type="text" value="" placeholder="Student Subject" />
-                    </div>
-                    <div class="Row input" style="align-items: center">
-                        <label>Teacher</label>
-                        <input type="text" value="" placeholder="Teacher" />
-                    </div>
-                    <div class="Row input" style="align-items: center">
-                        <label>Room</label>
-                        <select style="width: 211px; border: 6px solid #ddd">
-                            <option value="0">Php</option>
-                            <option value="1">JavaScrip</option>
-                            <option value="2">HTML</option>
-                            <option value="3">Ajax</option>
-                        </select>
-                    </div>
-                    <div class="Row input" style="align-items: center">
-                        <label>Lesson</label>
-                        <input type="text" value="" placeholder="Lesson" />
-                    </div>
-                    <div class="Row input" style="align-items: center">
-                        <label>Date</label>
-                        <input type="date" value="" style="width: 211px; font-family: Segoe UI" />
-                    </div>
-                    <div class="Row input" style="align-items: center">
-                        <label>Start</label>
-                        <input type="time" value="" style="width: 211px; font-family: Segoe UI" />
-                    </div>
-                    <div class="Row input" style="align-items: center">
-                        <label>End</label>
-                        <input type="time" value="" style="width: 211px; font-family: Segoe UI" />
-                    </div>
-                    <div class="Row input" style="align-items: center">
-                        <button type="button" onclick="Insert()">Update</button>
-                    </div>
-                </form>
+                        <div class="Row input" style="align-items: center">
+                            <label>Name</label>
+                            <input type="text" value="" placeholder="Student Name" />
+                        </div>
+                        <div class="Row input" style="align-items: center">
+                            <label>ID</label>
+                            <input type="text" value="" placeholder="Student ID" />
+                        </div>
+                        <div class="Row input" style="align-items: center">
+                            <label>Subject</label>
+                            <input type="text" value="" placeholder="Student Subject" />
+                        </div>
+                        <div class="Row input" style="align-items: center">
+                            <label>Teacher</label>
+                            <input type="text" value="" placeholder="Teacher" />
+                        </div>
+                        <div class="Row input" style="align-items: center">
+                            <label>Room</label>
+                            <select style="width: 211px; border: 6px solid #ddd">
+                                <option value="0">Php</option>
+                                <option value="1">JavaScrip</option>
+                                <option value="2">HTML</option>
+                                <option value="3">Ajax</option>
+                            </select>
+                        </div>
+                        <div class="Row input" style="align-items: center">
+                            <label>Lesson</label>
+                            <input type="text" value="" placeholder="Lesson" />
+                        </div>
+                        <div class="Row input" style="align-items: center">
+                            <label>Date</label>
+                            <input type="date" value="" style="width: 211px; font-family: Segoe UI" />
+                        </div>
+                        <div class="Row input" style="align-items: center">
+                            <label>Start</label>
+                            <input type="time" value="" style="width: 211px; font-family: Segoe UI" />
+                        </div>
+                        <div class="Row input" style="align-items: center">
+                            <label>End</label>
+                            <input type="time" value="" style="width: 211px; font-family: Segoe UI" />
+                        </div>
+                        <div class="Row input" style="align-items: center">
+                            <button type="button" onclick="Insert()">Update</button>
+                        </div>
+                    </form>
                 </div>
 
             </div>
