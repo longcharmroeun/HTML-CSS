@@ -7,7 +7,7 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
-    <SpecificPageValue>JavaScrip Lesson/Attendence/AttendenceForm.html</SpecificPageValue>
+    <SpecificPageValue>JavaScrip Lesson/Table/table.html</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
     <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
     <Runtime>PHP</Runtime>
@@ -195,6 +195,7 @@
     <Folder Include="JavaScrip Lesson\Caculator\" />
     <Folder Include="JavaScrip Lesson\Attendence\" />
     <Folder Include="JavaScrip Lesson\canvans\" />
+    <Folder Include="JavaScrip Lesson\Table\" />
     <Folder Include="JavaScrip Lesson\Student List\" />
     <Folder Include="HomeWork\" />
     <Folder Include="HomeWork\PHP\PHP Homework No.2\" />
@@ -263,6 +264,8 @@
     <Content Include="HomeWork\PHP\PHP Homework No.2\Task1\Country.txt" />
     <Content Include="HomeWork\PHP\PHP Homework No.2\Task2\Country.txt" />
     <Content Include="HomeWork\PHP\PHP Homework No.2\Task2\CountryList.txt" />
+    <Content Include="JavaScrip Lesson\Table\table.html" />
+    <Content Include="JavaScrip Lesson\Table\Table.js" />
     <Content Include="PHP_Lesson\AJax\Ajax.js" />
     <Content Include="PHP_Lesson\AJax\FormStyle.css" />
     <Content Include="PHP_Lesson\AJax\HTMLPage1.html" />
