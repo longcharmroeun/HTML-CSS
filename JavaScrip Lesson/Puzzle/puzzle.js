@@ -22,9 +22,10 @@ function Cut() {
                 var canvas = document.createElement("canvas");
                 canvas.setAttribute("width", width);
                 canvas.setAttribute("height", height);
+                canvas.setAttribute("id", counter + 20);
                
                 canvas.getContext("2d").drawImage(image, x, y, width, height, 0, 0, width, height);
-                pieces.push({ Key: counter, value: canvas });
+                pieces.push(canvas);
                 x += width;
                 counter++;
             }
@@ -43,7 +44,7 @@ function Cut() {
                 div.setAttribute("id", counter);
                 div.className = "div1";
 
-                div.append(pieces[counter].value)
+                div.append(pieces[counter])
 
                 row.appendChild(div);
 
@@ -58,9 +59,8 @@ function Check() {
     var num = document.getElementById("column").value * document.getElementById("row").value;
     var tmp = 0;
     for (var i = 0; i < num; i++) {
-        if (pieces[i].Key == document.getElementById(i).id) {
+        if (i == (Number(document.getElementById(i).firstChild.id) - 20)) {
             tmp++;
-            alert(document.getElementById(i).id);
         }
     }
     if (tmp == num) {
@@ -90,7 +90,7 @@ function Shuffle() {
             div.setAttribute("id", counter);
             div.className = "div1";
 
-            div.append(pieces[counter].value)
+            div.append(pieces[counter])
 
             row.appendChild(div);
 
