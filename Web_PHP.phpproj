@@ -7,7 +7,7 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
-    <SpecificPageValue>JavaScrip Lesson/Table/table.html</SpecificPageValue>
+    <SpecificPageValue>Ajax Exam/Authentication/Login.php</SpecificPageValue>
     <StartAction>SpecificPage</StartAction>
     <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
     <Runtime>PHP</Runtime>
@@ -195,6 +195,7 @@
     <Folder Include="JavaScrip Lesson\Caculator\" />
     <Folder Include="JavaScrip Lesson\Attendence\" />
     <Folder Include="JavaScrip Lesson\canvans\" />
+    <Folder Include="JavaScrip Lesson\Puzzle\" />
     <Folder Include="JavaScrip Lesson\Table\" />
     <Folder Include="JavaScrip Lesson\Student List\" />
     <Folder Include="HomeWork\" />
@@ -259,6 +260,10 @@
       <DependentUpon>JavaScrip Lesson\Counter\JavaScript1.js</DependentUpon>
     </Content>
     <Content Include="JavaScrip Lesson\CSS\FormStyle.css" />
+    <Content Include="JavaScrip Lesson\Puzzle\download.jpg" />
+    <Content Include="JavaScrip Lesson\Puzzle\image.jpg" />
+    <Content Include="JavaScrip Lesson\Puzzle\puzzle.html" />
+    <Content Include="JavaScrip Lesson\Puzzle\puzzle.js" />
     <Content Include="JavaScrip Lesson\Student List\Form.html" />
     <Content Include="JavaScrip Lesson\Student List\Student.js" />
     <Content Include="HomeWork\PHP\PHP Homework No.2\Task1\Country.txt" />
