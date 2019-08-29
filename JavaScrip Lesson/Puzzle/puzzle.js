@@ -1,5 +1,6 @@
 ﻿var pieces = new Array();
 
+
 function Cut() {
     pieces = new Array();
     corrent = new Array();
@@ -32,7 +33,7 @@ function Cut() {
             y += height;
         }
         counter = 0;
-        for (var i = 0; i < document.getElementById("column").value; i++) {
+        for (var i = 0; i <= document.getElementById("column").value; i++) {
             var row = document.createElement("div");
             row.className = "Row";
             for (var j = 0; j < document.getElementById("row").value; j++) {
@@ -53,6 +54,16 @@ function Cut() {
             document.getElementById("id").appendChild(row);
         }
     }
+}
+
+function Loader() {
+    var loader = document.createElement("div");
+    loader.className = "loader";
+    document.getElementById("image").appendChild(loader);
+}
+
+function test() {
+    document.getElementById("image").lastChild.remove();
 }
 
 function Check() {
