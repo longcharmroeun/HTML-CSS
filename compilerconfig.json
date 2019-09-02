@@ -2,5 +2,9 @@
   {
     "outputFile": "JavaScrip Lesson/Counter/JavaScript1.es5.js",
     "inputFile": "JavaScrip Lesson/Counter/JavaScript1.js"
+  },
+  {
+    "outputFile": "JavaScrip Lesson/Puzzle/puzzle.es5.js",
+    "inputFile": "JavaScrip Lesson/Puzzle/puzzle.js"
   }
 ]

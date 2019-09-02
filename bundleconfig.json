@@ -4,5 +4,17 @@
     "inputFiles": [
       "JavaScrip Lesson/Counter/JavaScript1.js"
     ]
+  },
+  {
+    "outputFileName": "JavaScrip Lesson/Puzzle/puzzle.min.js",
+    "inputFiles": [
+      "JavaScrip Lesson/Puzzle/puzzle.js"
+    ]
+  },
+  {
+    "outputFileName": "JavaScrip Lesson/Puzzle/puzzle.min.html",
+    "inputFiles": [
+      "JavaScrip Lesson/Puzzle/puzzle.html"
+    ]
   }
 ]
